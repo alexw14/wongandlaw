@@ -2,14 +2,27 @@ import React from 'react';
 
 const LanguageBar: React.FC = () => {
   return (
-    <div className="bg-transparent">
-      <div className="container mx-auto flex justify-end">
-        <a href="/en" className="">English</a>
-        <a href="/zh-HK" className="">繁體中文</a>
-        <a href="/zh-CN" className="">简体中文</a>
-      </div>
+    <div className="container mx-auto flex justify-end">
+      <a href="/en" className="mx-2 flex items-center">
+        <span className="mr-1" role="img" aria-label="US Flag">
+          🇺🇸
+        </span>
+        EN
+      </a>
+      <a href="/zh-HK" className="mx-2 flex items-center">
+        <span className="mr-1" role="img" aria-label="Hong Kong Flag">
+          🇭🇰
+        </span>
+        繁體
+      </a>
+      <a href="/zh-CN" className="mx-2 flex items-center">
+        <span className="mr-1" role="img" aria-label="China Flag">
+          🇨🇳
+        </span>
+        简体
+      </a>
     </div>
   );
-}
+};
 
-export default LanguageBar; 
+export default LanguageBar;
