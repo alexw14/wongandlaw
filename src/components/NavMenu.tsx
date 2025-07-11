@@ -1,40 +1,50 @@
 import Link from 'next/link';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 interface NavMenuProps {
   vertical?: boolean;
   onLinkClick?: () => void;
 }
 
+const navItems = [
+  { href: '/practice-areas', label: 'Practice Areas' },
+  { href: '/news-blogs', label: 'News & Blogs' },
+  { href: '/professionals', label: 'Our Team' },
+  { href: '/about', label: 'About Us' },
+  { href: '/contact', label: 'Contact Us' },
+];
+
+const containerVariants = {
+  visible: {
+    transition: {
+      staggerChildren: 0.08,
+    },
+  },
+  hidden: {},
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const NavMenu: React.FC<NavMenuProps> = ({ vertical = false, onLinkClick }) => {
   return (
-    <div className={vertical ? "flex flex-col space-y-6" : "flex space-x-6"}>
-      <nav>
-        <Link href="/practice-areas" className="hover:text-[#FF8426]" onClick={onLinkClick}>
-          Practice Areas
-        </Link>
-      </nav>
-      <nav>
-        <Link href="/news-blogs" className="hover:text-[#FF8426]" onClick={onLinkClick}>
-          News & Blogs
-        </Link>
-      </nav>
-      <nav>
-        <Link href="/professionals" className="hover:text-[#FF8426]" onClick={onLinkClick}>
-          Our Team
-        </Link>
-      </nav>
-      <nav>
-        <Link href="/about" className="hover:text-[#FF8426]" onClick={onLinkClick}>
-          About Us
-        </Link>
-      </nav>
-      <nav>
-        <Link href="/contact" className="hover:text-[#FF8426]" onClick={onLinkClick}>
-          Contact Us
-        </Link>
-      </nav>
-    </div>
+    <motion.div
+      className={vertical ? "flex flex-col space-y-6" : "flex space-x-6"}
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      {navItems.map((item) => (
+        <motion.nav key={item.href} variants={itemVariants} transition={{ duration: 0.5, ease: "easeOut" }}>
+          <Link href={item.href} className="hover:text-[#FF8426]" onClick={onLinkClick}>
+            {item.label}
+          </Link>
+        </motion.nav>
+      ))}
+    </motion.div>
   );
 };
 

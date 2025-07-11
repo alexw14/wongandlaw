@@ -1,6 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import StatCard from './StatCard';
+import { motion } from 'framer-motion';
+
+const statsVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
 
 const stats = [
   { value: '20+', label: 'Years of Immigration Legal Experience' },
@@ -12,7 +18,13 @@ const stats = [
 ];
 
 const AboutStatsSection: React.FC = () => (
-  <section className="bg-white py-16 px-4">
+  <motion.section
+    className="bg-white py-16 px-4"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.3 }}
+    variants={statsVariants}
+  >
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-12">
       {/* Stats - Left Side */}
       <div className="w-full md:w-1/2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-8 self-center">
@@ -39,7 +51,7 @@ const AboutStatsSection: React.FC = () => (
         </Link>
       </div>
     </div>
-  </section>
+  </motion.section>
 );
 
 export default AboutStatsSection;
