@@ -18,7 +18,7 @@ const Headers: React.FC = () => {
   }, []);
 
   // Only show background color on desktop (sm and up)
-  const showBg = (scrolled || hovered) && typeof window !== 'undefined' && window.innerWidth >= 640;
+  const showWhiteBg = (scrolled || hovered) && typeof window !== 'undefined' && window.innerWidth >= 640;
 
   return (
     <div
@@ -26,12 +26,12 @@ const Headers: React.FC = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className={`transition-colors duration-300 ${showBg ? 'bg-white' : 'bg-transparent'}`}>
+      <div className={`transition-colors duration-300 ${showWhiteBg ? 'bg-white' : 'bg-transparent'}`}>
         <LanguageBar />
       </div>
       <header
         className={`transition-colors duration-300 ${
-          showBg ? 'bg-white' : 'bg-[#FF8426] text-white'
+          showWhiteBg ? 'bg-white' : 'bg-[#FF8426] text-white'
         }`}
       >
         <div className="container mx-auto flex justify-between items-center py-4 px-4">
