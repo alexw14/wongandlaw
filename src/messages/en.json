@@ -11,5 +11,18 @@
     "mainTitleBottom": "U.S., England & Wales, Hong Kong and China",
     "subTitle": "Licensed and experienced in multiple jurisdictions, we provide clear, multilingual legal guidance in English, Cantonese, and Mandarin.",
     "buttonText": "Explore Our Practice Areas"
+  },
+  "AboutStatsSection": {
+    "yearsOfExperience": "Years of Immigration Legal Experience",
+    "totalCasesHandled": "Total Cases Handled",
+    "eb5InvestorCases": "EB-5 Investor Cases",
+    "eb5CasesUnderRIA": "EB-5 Cases Under RIA",
+    "eb5ApprovalRateUnderRIA": "EB-5 Approval Rate Under RIA",
+    "licensed": "Licensed",
+    "licensedIn": "Across U.S., Hong Kong, and China",
+    "aboutTitle": "Wong & Partners: Your Trusted Immigration & Business Law Team",
+    "aboutDescriptionOne": "Wong & Partners is a family-founded law firm with deep roots in the communities we serve. With over two decades of experience, our multilingual team provides clear, client-focused legal guidance in English, Cantonese, and Mandarin. Licensed across the U.S., Hong Kong, and China, we are dedicated to delivering results with integrity and expertise.",
+    "aboutDescriptionTwo": "Our practice areas include the EB-5 Investor Program, immigration, asset protection and estate planning, business entities and corporate governance, e-commerce and intellectual property, and business transactions. We are committed to helping individuals, families, and businesses achieve their goals with personalized strategies and a global perspective.",
+    "meetOurTeam": "Meet Our Team"
   }
 }

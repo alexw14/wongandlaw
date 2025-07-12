@@ -11,5 +11,18 @@
     "mainTitleBottom": "香港及中國的數十年卓越法律服務",
     "subTitle": "我們擁有多個司法管轄區的執業資格與豐富經驗，提供以英語、粵語及普通話清晰解說的多語言法律指引。",
     "buttonText": "了解我們的業務範疇"
+  },
+  "AboutStatsSection": {
+    "yearsOfExperience": "年移民法律經驗",
+    "totalCasesHandled": "處理個案總數",
+    "eb5InvestorCases": "EB-5 投資移民個案",
+    "eb5CasesUnderRIA": "RIA 新法下的 EB-5 個案",
+    "eb5ApprovalRateUnderRIA": "RIA 新法下的 EB-5 批核率",
+    "licensed": "執業資格",
+    "licensedIn": "橫跨美國、香港及中國地區",
+    "aboutTitle": "Wong & Partners: 您值得信賴的移民及商業法律團隊",
+    "aboutDescriptionOne": "Wong & Partners 是由家族創立的律師行，深耕我們所服務的社區。擁有超過二十年經驗，我們的多語言團隊能以英語、粵語及普通話，提供以客為本、清晰明確的法律指引。我們在美國、香港及中國均具備執業資格，致力以誠信和專業為客戶達致理想成果。",
+    "aboutDescriptionTwo": "我們的業務範疇包括 EB-5 投資移民計劃、移民事務、資產保障與遺產規劃、商業實體與公司治理、電子商務與知識產權，以及商業交易。我們致力為個人、家庭及企業提供具針對性的策略，並以全球視野協助他們實現目標。",
+    "meetOurTeam": "認識我們的團隊"
   }
 }

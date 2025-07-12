@@ -3,11 +3,13 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import LanguageBar from './LanguageBar';
 import NavMenu from './NavMenu';
+import { useLocale } from 'next-intl';
 
 const Headers: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const currentLocale = useLocale();
 
   useEffect(() => {
     const onScroll = () => {
@@ -42,7 +44,9 @@ const Headers: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center py-4 px-4">
           <div className="flex-shrink-0">
             <h1 className="text-xl sm:text-2xl font-bold whitespace-nowrap">
-              <Link href="/">Wong & Partners</Link>
+              <Link href={currentLocale === 'en' ? '/' : `/${currentLocale}`}>
+                Wong & Partners
+              </Link>
             </h1>
           </div>
           {/* Hamburger for mobile */}
