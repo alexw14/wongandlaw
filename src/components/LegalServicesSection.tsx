@@ -73,11 +73,22 @@ const contentVariants = {
 	exit: { opacity: 0, x: -24, transition: { duration: 0.3 } },
 };
 
+const sectionVariants = {
+	hidden: { opacity: 0, y: 40 },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
+
 const LegalServicesSection: React.FC = () => {
 	const [active, setActive] = useState(0);
 
 	return (
-		<section className="bg-white py-16 px-4">
+		<motion.section
+			className="bg-white py-16 px-4"
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true, amount: 0.3 }}
+			variants={sectionVariants}
+		>
 			<div className="max-w-6xl mx-auto">
 				<h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#FF8426] text-center">
 					Legal Services We Provide
@@ -147,7 +158,7 @@ const LegalServicesSection: React.FC = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 
