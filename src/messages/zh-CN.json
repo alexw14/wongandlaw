@@ -24,5 +24,13 @@
     "aboutDescriptionOne": "Wong & Partners 是由家族创立的律师行，深耕我们所服务的社区。拥有超过二十年经验，我们的多语言团队能以英语、粤语及普通话，提供以客户为本、清晰明了的法律指引。我们在美国、香港及中国均具备执业资格，致力以诚信和专业为客户实现理想结果。",
     "aboutDescriptionTwo": "我们的业务范围包括 EB-5 投资移民项目、移民事务、资产保护与遗产规划、商业实体与公司治理、电子商务与知识产权，以及商业交易。我们致力于为个人、家庭和企业提供个性化策略，并以全球视野帮助他们实现目标。",
     "meetOurTeam": "认识我们的团队"
+  },
+  "KeyValuesSection": {
+    "extensiveExperience": "丰富经验",
+    "globalPerspective": "全球视野",
+    "internationalSupport": "国际支持",
+    "extensiveExperienceDescription": "我们以提供全面的法律咨询与服务为傲，无论您的需求涉及商业法、国际交易、知识产权、资产保护或移民事务。",
+    "globalPerspectiveDescription": "我们的律师具备美国、英格兰与威尔士、香港及中国的执业资格，能够以广阔且专业的视角处理各类法律事务。",
+    "internationalSupportDescription": "我们的多语言团队精通英语、中文、韩语及越南语，确保与多元客户之间的沟通清晰有效。"
   }
 }

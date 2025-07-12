@@ -24,5 +24,13 @@
     "aboutDescriptionOne": "Wong & Partners is a family-founded law firm with deep roots in the communities we serve. With over two decades of experience, our multilingual team provides clear, client-focused legal guidance in English, Cantonese, and Mandarin. Licensed across the U.S., Hong Kong, and China, we are dedicated to delivering results with integrity and expertise.",
     "aboutDescriptionTwo": "Our practice areas include the EB-5 Investor Program, immigration, asset protection and estate planning, business entities and corporate governance, e-commerce and intellectual property, and business transactions. We are committed to helping individuals, families, and businesses achieve their goals with personalized strategies and a global perspective.",
     "meetOurTeam": "Meet Our Team"
+  },
+  "KeyValuesSection": {
+    "extensiveExperience": "Extensive Experience",
+    "globalPerspective": "Global Perspective",
+    "internationalSupport": "International Support",
+    "extensiveExperienceDescription": "We take pride in providing comprehensive legal advice and services, whether your needs involve business law, international transactions, intellectual property, asset protection, or immigration matters.",
+    "globalPerspectiveDescription": "With lawyers licensed in the U.S., England & Wales, Hong Kong, and China, we address legal matters with a broad and informed outlook.",
+    "internationalSupportDescription": "Our multilingual team, fluent in English, Chinese, Korean, and Vietnamese, ensures clear and effective communication with a diverse client base."
   }
 }
