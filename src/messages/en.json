@@ -1,5 +1,15 @@
 {
-  "HomePage": {
-    "title": "Decades of Legal Excellence Across"
+  "NavMenu": {
+    "practiceAreas": "Practice Areas",
+    "newsAndBlogs": "News & Blogs",
+    "ourTeam": "Our Team",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "HeroSection": {
+    "mainTitleTop": "Decades of Legal Excellence Across ",
+    "mainTitleBottom": "U.S., England & Wales, Hong Kong and China",
+    "subTitle": "Licensed and experienced in multiple jurisdictions, we provide clear, multilingual legal guidance in English, Cantonese, and Mandarin.",
+    "buttonText": "Explore Our Practice Areas"
   }
 }

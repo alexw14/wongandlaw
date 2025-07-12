@@ -1,19 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 interface NavMenuProps {
   vertical?: boolean;
   onLinkClick?: () => void;
 }
-
-const navItems = [
-  { href: '/practice-areas', label: 'Practice Areas' },
-  { href: '/news-blogs', label: 'News & Blogs' },
-  { href: '/professionals', label: 'Our Team' },
-  { href: '/about', label: 'About Us' },
-  { href: '/contact', label: 'Contact Us' },
-];
 
 const containerVariants = {
   visible: {
@@ -30,6 +23,16 @@ const itemVariants = {
 };
 
 const NavMenu: React.FC<NavMenuProps> = ({ vertical = false, onLinkClick }) => {
+  const t = useTranslations('NavMenu');
+
+  const navItems = [
+    { href: '/practice-areas', label: t('practiceAreas') },
+    { href: '/news-blogs', label: t('newsAndBlogs') },
+    { href: '/professionals', label: t('ourTeam') },
+    { href: '/about', label: t('aboutUs') },
+    { href: '/contact', label: t('contactUs') },
+  ];
+
   return (
     <motion.div
       className={vertical ? "flex flex-col space-y-6" : "flex space-x-6"}

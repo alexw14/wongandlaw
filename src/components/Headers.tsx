@@ -18,7 +18,10 @@ const Headers: React.FC = () => {
   }, []);
 
   // Only show background color on desktop (sm and up)
-  const showWhiteBg = (scrolled || hovered) && typeof window !== 'undefined' && window.innerWidth >= 640;
+  const showWhiteBg =
+    (scrolled || hovered) &&
+    typeof window !== 'undefined' &&
+    window.innerWidth >= 640;
 
   return (
     <div
@@ -26,12 +29,14 @@ const Headers: React.FC = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className={`transition-colors duration-300 ${showWhiteBg ? 'bg-white' : 'bg-transparent'}`}>
+      <div className="transition-colors duration-300 bg-white">
         <LanguageBar />
       </div>
       <header
         className={`transition-colors duration-300 ${
-          showWhiteBg ? 'bg-white' : 'bg-[#FF8426] text-white'
+          showWhiteBg
+            ? 'bg-white shadow-md' // Add shadow when white background is active
+            : 'bg-[#FF8426] text-white'
         }`}
       >
         <div className="container mx-auto flex justify-between items-center py-4 px-4">
@@ -46,8 +51,20 @@ const Headers: React.FC = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle navigation"
           >
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+            <svg
+              className="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d={
+                  menuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'
+                }
+              />
             </svg>
           </button>
           {/* Desktop Nav */}
@@ -58,7 +75,9 @@ const Headers: React.FC = () => {
         {/* Slide-out Mobile Nav */}
         <div
           className={`fixed inset-0 z-50 bg-black/40 transition-opacity duration-300 ${
-            menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+            menuOpen
+              ? 'opacity-100 pointer-events-auto'
+              : 'opacity-0 pointer-events-none'
           } sm:hidden`}
           onClick={() => setMenuOpen(false)}
         >
@@ -66,15 +85,25 @@ const Headers: React.FC = () => {
             className={`fixed top-0 right-0 h-full w-64 bg-[#FF8426] text-white shadow-lg transform transition-transform duration-300 ${
               menuOpen ? 'translate-x-0' : 'translate-x-full'
             }`}
-            onClick={e => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               className="absolute top-4 right-4"
               onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
             >
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-7 h-7"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
             <div className="mt-16 px-6">

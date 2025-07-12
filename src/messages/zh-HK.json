@@ -1,5 +1,15 @@
 {
-  "HomePage": {
-    "title": "數十年的法律卓越成就"
+  "NavMenu": {
+    "practiceAreas": "法律服務",
+    "newsAndBlogs": "律所新聞",
+    "ourTeam": "團隊介紹",
+    "aboutUs": "關於我們",
+    "contactUs": "聯繫我們"
+  },
+  "HeroSection": {
+    "mainTitleTop": "橫跨美國、英格蘭與威爾斯、",
+    "mainTitleBottom": "香港及中國的數十年卓越法律服務",
+    "subTitle": "我們擁有多個司法管轄區的執業資格與豐富經驗，提供以英語、粵語及普通話清晰解說的多語言法律指引。",
+    "buttonText": "了解我們的業務範疇"
   }
 }
