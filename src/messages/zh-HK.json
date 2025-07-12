@@ -32,5 +32,37 @@
     "extensiveExperienceDescription": "我們以提供全面的法律諮詢與服務為傲，無論您的需求涉及商業法、國際交易、知識產權、資產保障或移民事務。",
     "globalPerspectiveDescription": "我們的律師具備美國、英格蘭與威爾斯、香港及中國的執業資格，能以廣闊且專業的視角處理各類法律事務。",
     "internationalSupportDescription": "我們的多語言團隊精通英語、中文、韓語及越南語，確保與多元客戶之間的溝通清晰有效。"
+  },
+  "LegalServicesSection": {
+    "legalServicesTitle": "我們提供的法律服務",
+    "eb5InvestorProgram": "EB-5 投資移民計劃",
+    "eb5InvestorProgramDescription": "為透過 EB-5 計劃申請美國永久居留的投資人及其家庭，提供專業指引與法律代表服務，涵蓋直投及區域中心投資。",
+    "eb5InvestorProgramButtonText": "了解更多 EB-5 資訊",
+    "immigration": "移民服務",
+    "immigrationDescription": "為個人、家庭及企業提供全面的移民服務，包括簽證、綠卡、公民申請及合規事宜。",
+    "immigrationButtonText": "了解更多移民資訊",
+    "businessEntities": "商業實體與公司治理",
+    "businessEntitiesDescription": "提供公司、有限責任公司及合夥企業的設立、架構與治理服務，並就合規與最佳實務提供持續法律諮詢。",
+    "businessEntitiesButtonText": "了解更多商業實體資訊",
+    "businessTransactions": "商業交易",
+    "businessTransactionsDescription": "就併購、合約、合資企業，以及各類國內外商業交易提供法律支援。",
+    "businessTransactionsButtonText": "了解更多商業交易資訊",
+    "ecommerceAndIP": "電子商務與知識產權",
+    "ecommerceAndIPDescription": "提供商標、版權及專利的保護與維權服務，並為網上業務與數位資產制定法律策略。",
+    "ecommerceAndIPButtonText": "了解更多知識產權資訊",
+    "assetsProtection": "資產保障與遺產規劃",
+    "assetsProtectionDescription": "提供個人化的資產保障、信託、遺囑及遺產規劃服務，助您保障財產、傳承遺產，讓家人安心無憂。",
+    "assetsProtectionButtonText": "了解更多資產保障資訊"
+  },
+  "RecentNewsSection": {
+    "title": "最新消息與部落格",
+    "viewAllBtnText": "查看全部"
+  },
+  "Footer": {
+    "subtitle": "致力於提供專業的移民、商業及遺產規劃法律服務。",
+    "losAngelesOffice": "洛杉磯辦公室",
+    "visitOurBlog": "前往部落格",
+    "websiteTermsAndPrivacy": "網站條款與隱私",
+    "legalDisclaimer": "法律免責聲明"
   }
 }

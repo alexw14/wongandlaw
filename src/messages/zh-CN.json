@@ -32,5 +32,37 @@
     "extensiveExperienceDescription": "我们以提供全面的法律咨询与服务为傲，无论您的需求涉及商业法、国际交易、知识产权、资产保护或移民事务。",
     "globalPerspectiveDescription": "我们的律师具备美国、英格兰与威尔士、香港及中国的执业资格，能够以广阔且专业的视角处理各类法律事务。",
     "internationalSupportDescription": "我们的多语言团队精通英语、中文、韩语及越南语，确保与多元客户之间的沟通清晰有效。"
+  },
+  "LegalServicesSection": {
+    "legalServicesTitle": "我们提供的法律服务",
+    "eb5InvestorProgram": "EB-5 投资移民项目",
+    "eb5InvestorProgramDescription": "为通过 EB-5 项目申请美国永久居留的投资人及其家庭，提供专业指导与法律代理服务，涵盖直接投资及区域中心投资。",
+    "eb5InvestorProgramButtonText": "了解更多 EB-5 信息",
+    "immigration": "移民服务",
+    "immigrationDescription": "为个人、家庭及企业提供全面的移民服务，包括签证、绿卡、公民申请及合规事务。",
+    "immigrationButtonText": "了解更多移民信息",
+    "businessEntities": "商业实体与公司治理",
+    "businessEntitiesDescription": "提供公司、有限责任公司及合伙企业的设立、架构与治理服务，并就合规与最佳实践提供持续法律咨询。",
+    "businessEntitiesButtonText": "了解更多商业实体信息",
+    "businessTransactions": "商业交易",
+    "businessTransactionsDescription": "就并购、合同、合资企业，以及各类国内外商业交易提供法律支持。",
+    "businessTransactionsButtonText": "了解更多商业交易信息",
+    "ecommerceAndIP": "电子商务与知识产权",
+    "ecommerceAndIPDescription": "提供商标、版权及专利的保护与维权服务，并为网络业务与数字资产制定法律策略。",
+    "ecommerceAndIPButtonText": "了解更多知识产权信息",
+    "assetsProtection": "资产保障与遗产规划",
+    "assetsProtectionDescription": "提供个性化的资产保障、信托、遗嘱及遗产规划服务，助您保障财富、传承遗产，让家人安心无忧。",
+    "assetsProtectionButtonText": "了解更多资产保障信息"
+  },
+  "RecentNewsSection": {
+    "title": "最新消息与博客",
+    "viewAllBtnText": "查看全部"
+  },
+  "Footer": {
+    "subtitle": "致力于提供专业的移民、商业及遗产规划法律服务。",
+    "losAngelesOffice": "洛杉矶办公室",
+    "visitOurBlog": "前往博客",
+    "websiteTermsAndPrivacy": "网站条款与隐私",
+    "legalDisclaimer": "法律免责声明"
   }
 }

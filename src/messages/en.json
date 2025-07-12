@@ -32,5 +32,37 @@
     "extensiveExperienceDescription": "We take pride in providing comprehensive legal advice and services, whether your needs involve business law, international transactions, intellectual property, asset protection, or immigration matters.",
     "globalPerspectiveDescription": "With lawyers licensed in the U.S., England & Wales, Hong Kong, and China, we address legal matters with a broad and informed outlook.",
     "internationalSupportDescription": "Our multilingual team, fluent in English, Chinese, Korean, and Vietnamese, ensures clear and effective communication with a diverse client base."
+  },
+  "LegalServicesSection": {
+    "legalServicesTitle": "Legal Services We Provide",
+    "eb5InvestorProgram": "EB-5 Investor Program",
+    "eb5InvestorProgramDescription": "Guidance and representation for investors and families seeking U.S. permanent residency through the EB-5 program, including direct and regional center investments.",
+    "eb5InvestorProgramButtonText": "Learn More about EB-5",
+    "immigration": "Immigration",
+    "immigrationDescription": "Comprehensive immigration services for individuals, families, and businesses, including visas, green cards, citizenship, and compliance.",
+    "immigrationButtonText": "Learn More about Immigration",
+    "businessEntities": "Business Entities & Corporate Governance",
+    "businessEntitiesDescription": "Formation, structuring, and governance of corporations, LLCs, and partnerships, plus ongoing counsel for compliance and best practices.",
+    "businessEntitiesButtonText": "Learn More about Business Entities",
+    "businessTransactions": "Business Transactions",
+    "businessTransactionsDescription": "Legal support for mergers, acquisitions, contracts, joint ventures, and a wide range of domestic and international business deals.",
+    "businessTransactionsButtonText": "Learn More about Business Transactions",
+    "ecommerceAndIP": "E-Commerce & Intellectual Property",
+    "ecommerceAndIPDescription": "Protection and enforcement of trademarks, copyrights, and patents, plus legal strategies for online businesses and digital assets.",
+    "ecommerceAndIPButtonText": "Learn More about E-Commerce & IP",
+    "assetsProtection": "Assets Protection & Estate Planning",
+    "assetsProtectionDescription": "Personalized asset protection, trusts, wills, and estate planning to secure your legacy and provide peace of mind for your family.",
+    "assetsProtectionButtonText": "Learn More about Assets Protection"
+  },
+  "RecentNewsSection": {
+    "title": "Recent News & Blogs",
+    "viewAllBtnText": "View All"
+  },
+  "Footer": {
+    "subtitle": "Dedicated to providing expert legal services in immigration, business, and estate planning.",
+    "losAngelesOffice": "Los Angeles Office",
+    "visitOurBlog": "Visit Our Blog",
+    "websiteTermsAndPrivacy": "Website Terms & Privacy",
+    "legalDisclaimer": "Legal Disclaimer"
   }
 }
