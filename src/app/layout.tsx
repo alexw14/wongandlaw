@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Headers from '@/components/Headers';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Wong & Partners',
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Headers />
         {children}
+        <Footer />
       </body>
     </html>
   );
