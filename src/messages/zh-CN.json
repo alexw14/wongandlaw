@@ -64,5 +64,24 @@
     "visitOurBlog": "前往博客",
     "websiteTermsAndPrivacy": "网站条款与隐私",
     "legalDisclaimer": "法律免责声明"
+  },
+  "PracticeAreasHeader": {
+    "title": "我们的法律服务领域",
+    "description": "探索我们为个人、家庭及企业提供的法律服务。",
+    "instructionalText": "点击任一项目，了解我们如何为您提供帮助。"
+  },
+  "PracticeAreasGrid": {
+    "eb5Title": "EB-5 投资移民计划",
+    "eb5Description": "EB-5 投资移民计划是美国的一项移民签证项目，为外国投资者提供获得合法永久居留权（绿卡）的途径。申请人需在新的商业企业（NCE）中进行符合要求的投资，并创造规定数量的就业机会。",
+    "immigrationTitle": "移民服务",
+    "immigrationDescription": "移民申请或请愿通常涉及复杂的法律问题和程序。我们可以帮助您轻松完成整个移民过程。",
+    "businessEntitiesTitle": "商业实体与公司治理",
+    "businessEntitiesDescription": "选择商业实体和组织结构是创业初期非常关键的一步。您需要了解所选的实体和结构能为您带来哪些法律保护和优势。",
+    "businessTransactionsTitle": "商业交易",
+    "businessTransactionsDescription": "成功且高效的商业交易需要具备多领域法律知识与经验的法律顾问，同时拥有财务与实际操作经验、谈判技巧，以及对各方文化的理解。",
+    "ecommerceAndIPTitle": "电子商务与知识产权",
+    "ecommerceAndIPDescription": "电子商务企业必须与专注于电商与知识产权法的法律专业人士紧密合作。这可确保企业符合法律规定，知识产权得到充分保护，并能主动应对潜在法律风险。",
+    "assetsProtectionTitle": "资产保护与遗产规划",
+    "assetsProtectionDescription": "资产保护与遗产规划是全面法律和财务策略中不可或缺的一部分。与法律和财务专业人士咨询，有助于确保您的规划符合目标并遵守相关法律。"
   }
 }

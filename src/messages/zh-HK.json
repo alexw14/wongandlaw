@@ -64,5 +64,24 @@
     "visitOurBlog": "前往部落格",
     "websiteTermsAndPrivacy": "網站條款與隱私",
     "legalDisclaimer": "法律免責聲明"
+  },
+  "PracticeAreasHeader": {
+    "title": "我們的法律服務領域",
+    "description": "探索我們為個人、家庭及企業提供的法律服務。",
+    "instructionalText": "點擊任一項目，了解我們如何為您提供協助。"
+  },
+  "PracticeAreasGrid": {
+    "eb5Title": "EB-5 投資移民計劃",
+    "eb5Description": "EB-5 投資移民計劃是美國的一項移民簽證計劃，為外國投資者提供取得合法永久居留權（綠卡）的途徑。申請人須在新的商業企業（NCE）中作出符合規定的投資，並創造所需的就業機會。",
+    "immigrationTitle": "移民服務",
+    "immigrationDescription": "移民申請或請願往往涉及複雜的法律問題與程序。我們能協助您輕鬆完成整個移民過程。",
+    "businessEntitiesTitle": "商業實體與公司治理",
+    "businessEntitiesDescription": "選擇商業實體與組織架構是創業初期的重要一步。您需要了解所選擇的實體與架構能為您提供哪些法律保障與利益。",
+    "businessTransactionsTitle": "商業交易",
+    "businessTransactionsDescription": "成功且高效的商業交易需要具備多方面法律知識與經驗的法律顧問，同時擁有財務與實務操作的經驗、談判技巧，以及對不同文化背景的理解。",
+    "ecommerceAndIPTitle": "電子商務與知識產權",
+    "ecommerceAndIPDescription": "電子商務企業與專精於電子商務及知識產權法的法律專業人士密切合作至關重要。這能確保企業符合法律規定，知識產權獲得充分保護，並能主動應對潛在法律問題。",
+    "assetsProtectionTitle": "資產保護與遺產規劃",
+    "assetsProtectionDescription": "資產保護與遺產規劃是全面法律與財務策略中不可或缺的一部分。諮詢法律及財務專業人士有助於確保您的規劃符合目標並遵守相關法律。"
   }
 }
