@@ -1,9 +1,12 @@
+import PracticeAreasHeader from "@/components/PracticeAreasHeader";
+import PracticeAreasGrid from "@/components/PracticeAreasGrid";
+
 const PracticeAreasPage = () => {
   return (
-    <div>
-      <h1>Practice Areas</h1>
-      <p>Welcome to the Practice Areas page!</p>
-    </div>
+    <>
+      <PracticeAreasHeader />
+      <PracticeAreasGrid />
+    </>
   );
 };
 
