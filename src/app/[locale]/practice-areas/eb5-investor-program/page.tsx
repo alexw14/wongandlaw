@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import PracticeAreaHeader from '@/components/PracticeAreaHeader';
 import PracticeAreaOverview from '@/components/PracticeAreaOverview';
 import PracticeAreaKeyBenefits from '@/components/PracticeAreaKeyBenefits';
@@ -8,105 +9,98 @@ import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';
 import PracticeAreaContactUs from '@/components/PracticeAreaContactUs';
 
 const EB5InvestorProgramPage = () => {
+  const t = useTranslations('EB5InvestorProgram');
+
   const headerData = {
     imgUrl: '/images/services/eb5.jpg',
     imgAltText: 'EB-5 Investor Program',
-    title: 'EB-5 Investor Program',
-    subTitle:
-      'A pathway to U.S. permanent residency through investment and job creation.',
+    title: t('title'),
+    subTitle: t('subTitle'),
   };
 
   const overviewData = {
-    overviewText:
-      'The EB-5 Investor Program allows eligible investors and their families to obtain U.S. green cards by investing in American businesses that create jobs. Our firm guides you through every step, from investment selection to application and approval.',
-    aboutHeaderText: 'About the EB-5 Program',
-    aboutText:
-      'The EB-5 Immigrant Investor Program is a U.S. immigrant visa program that provides a path to lawful permanent residency (green card) for foreign nationals who make a qualifying investment in a new commercial enterprise (NCE) that creates the required number of jobs. In 2022, Congress passed the EB-5 Reform and Integrity Act of 2022 (RIA), a holistic reform of the EB-5 program, which became effective on March 15, 2022.',
+    overviewTitle: t('overviewTitle'),
+    overviewText: t('overviewText'),
+    aboutHeaderText: t('aboutHeaderText'),
+    aboutText: t('aboutText'),
   };
 
-  const keyBenefits = [
-    {
-      key: 'pathway',
-      title: 'Pathway to U.S. Green Card for you and your family',
-    },
-    {
-      key: 'noSponsorship',
-      title: 'No sponsorship required from an employer or family member',
-    },
-    {
-      key: 'freedom',
-      title: 'Freedom to live, work, and study anywhere in the U.S.',
-    },
-    {
-      key: 'citizenship',
-      title: 'Potential for U.S. citizenship after five years',
-    },
-  ];
+  const keyBenefits = {
+    title: t('keyBenefitsTitle'),
+    benefits: [
+      { title: t('benefitGreenCard') },
+      { title: t('benefitNoSponsorship') },
+      { title: t('benefitFreedom') },
+      { title: t('benefitCitizenship') },
+    ],
+  };
 
-  const basicRequirements = [
-    {
-      title: 'Investment Amount',
-      content:
-        'The EB-5 program requires a minimum investment of $800,000 in a Targeted Employment Area (TEA) or an infrastructure project (a new category under RIA). For other areas, the minimum is $1,050,000. Under RIA, these minimum amounts will be adjusted for inflation every five years.',
-      highlightDollarValues: true,
-    },
-    {
-      title: 'Lawful Source of Funds',
-      content:
-        'EB-5 investors must provide sufficient documentation in their I-526/I-526E petition to demonstrate that the minimum investment funds, plus any administrative fees paid to a regional center, have been obtained or earned through lawful means. Lawful source of funds is combined with lawful path of funds, which means investors must provide documentation showing how the funds were transferred to the NCE in the U.S.',
-      highlightDollarValues: true,
-    },
-    {
-      title: 'Job Creation',
-      content:
-        'Each investor must create at least 10 full-time jobs for qualifying U.S. workers within two years of becoming a conditional permanent resident. For regional center projects, jobs can be created through indirect or induced means (e.g., jobs calculated by construction costs using RIMS II or IMPLAN). For direct standalone investments, jobs must be created through direct employment (W-2 employees).',
-      highlightDollarValues: true,
-    },
-    {
-      title: 'At-Risk Investment',
-      content:
-        'To qualify, the EB-5 investor must actually place their capital at risk. The mere intent to invest is not sufficient. There must be a risk of loss and a chance of gain. Any guaranteed return, such as a promise to return a certain amount of capital, interest, or a right of ownership/use of real property, will disqualify the investment as “at risk.”',
-      highlightDollarValues: true,
-    },
-  ];
+  const basicRequirements = {
+    title: t('basicRequirementsTitle'),
+    requirements: [
+      {
+        title: t('investmentAmountTitle'),
+        content: t('investmentAmountContent'),
+        highlightDollarValues: true,
+      },
+      {
+        title: t('sourceOfFundsTitle'),
+        content: t('sourceOfFundsContent'),
+        highlightDollarValues: true,
+      },
+      {
+        title: t('jobCreationTitle'),
+        content: t('jobCreationContent'),
+        highlightDollarValues: true,
+      },
+      {
+        title: t('atRiskInvestmentTitle'),
+        content: t('atRiskInvestmentContent'),
+        highlightDollarValues: true,
+      },
+    ],
+  };
 
-  const processSteps = [
-    {
-      key: 'step1',
-      label: 'Consultation and eligibility assessment',
-      description: 'Meet with our team to review your goals and eligibility.',
-    },
-    {
-      key: 'step2',
-      label: 'Select investment project and conduct due diligence',
-      description: 'Choose a qualifying project and review all details.',
-    },
-    {
-      key: 'step3',
-      label: 'Invest funds and file I-526 petition',
-      description: 'Transfer funds and submit your application.',
-    },
-    {
-      key: 'step4',
-      label: 'USCIS review and approval',
-      description: 'USCIS reviews your petition and supporting documents.',
-    },
-    {
-      key: 'step5',
-      label: 'Conditional green card issued',
-      description: 'Receive your conditional green card upon approval.',
-    },
-    {
-      key: 'step6',
-      label: 'File I-829 petition to remove conditions after 2 years',
-      description: 'Submit evidence of job creation and investment.',
-    },
-    {
-      key: 'step7',
-      label: 'Receive permanent green card',
-      description: 'Obtain your permanent residency status.',
-    },
-  ];
+  const processSteps = {
+    title: t('processStepsTitle'),
+    steps: [
+      {
+        key: 'step1',
+        label: t('step1Label'),
+        description: t('step1Description'),
+      },
+      {
+        key: 'step2',
+        label: t('step2Label'),
+        description: t('step2Description'),
+      },
+      {
+        key: 'step3',
+        label: t('step3Label'),
+        description: t('step3Description'),
+      },
+      {
+        key: 'step4',
+        label: t('step4Label'),
+        description: t('step4Description'),
+      },
+      {
+        key: 'step5',
+        label: t('step5Label'),
+        description: t('step5Description'),
+      },
+      {
+        key: 'step6',
+        label: t('step6Label'),
+        description: t('step6Description'),
+      },
+      {
+        key: 'step7',
+        label: t('step7Label'),
+        description: t('step7Description'),
+      },
+    ],
+  };
 
   const questions = [
     {
@@ -128,7 +122,6 @@ const EB5InvestorProgramPage = () => {
         'No, you do not need to be involved in day-to-day management, but you must be involved in policy formation or as a limited partner.',
     },
   ];
-
   const contactUsData = {
     title: 'Ready to Start Your EB-5 Journey?',
     content:
@@ -140,9 +133,9 @@ const EB5InvestorProgramPage = () => {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <PracticeAreaHeader {...headerData} />
       <PracticeAreaOverview {...overviewData} />
-      <PracticeAreaKeyBenefits benefits={keyBenefits} />
-      <PracticeAreaBasicRequirements requirements={basicRequirements} />
-      <PracticeAreaProcess process={processSteps} />
+      <PracticeAreaKeyBenefits {...keyBenefits} />
+      <PracticeAreaBasicRequirements {...basicRequirements} />
+      <PracticeAreaProcess {...processSteps} />
       <FrequentlyAskedQuestions questions={questions} />
       <PracticeAreaContactUs {...contactUsData} />
     </div>

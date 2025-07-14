@@ -7,17 +7,18 @@ interface Step {
 }
 
 interface Process {
-  process: Step[];
+  title: string;
+  steps: Step[];
 }
 
-const PracticeAreaProcess: React.FC<Process> = ({ process }) => {
+const PracticeAreaProcess: React.FC<Process> = ({ title, steps }) => {
   return (
     <section className="mb-10">
       <h2 className="text-2xl font-bold mb-4 text-[#FF8426]">
-        Step-by-Step Process
+        {title}
       </h2>
       <div className="space-y-6">
-        {process.map((step, idx) => (
+        {steps.map((step, idx) => (
           <div
             key={step.key}
             className="flex items-start gap-4 bg-[#FFFAF3] rounded-lg p-5 shadow-sm"

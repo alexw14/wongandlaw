@@ -7,6 +7,7 @@ interface Requirement {
 }
 
 interface PracticeAreaBasicRequirementsProps {
+  title: string;
   requirements: Requirement[];
 }
 
@@ -26,11 +27,11 @@ function highlightDollarValues(text: string) {
 
 const PracticeAreaBasicRequirements: React.FC<
   PracticeAreaBasicRequirementsProps
-> = ({ requirements }) => {
+> = ({ title, requirements }) => {
   return (
     <section className="mb-10">
       <h2 className="text-2xl font-bold mb-4 text-[#FF8426]">
-        Basic Requirements
+        {title}
       </h2>
       <div className="grid gap-4 sm:grid-cols-2">
         {requirements.map((requirement) => {
