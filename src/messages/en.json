@@ -133,6 +133,15 @@
   },
   "Immigration": {
     "title": "Immigration",
-    "subTitle": "The United States is a nation of immigrants. Every year, hundreds of thousands of people from foreign countries immigrate to the U.S. to pursue their American Dream through family, employment, or political asylum."
+    "subTitle": "The United States is a nation of immigrants. Every year, hundreds of thousands of people from foreign countries immigrate to the U.S. to pursue their American Dream through family, employment, or political asylum.",
+    "immigrationPathways": "Immigration Pathways",
+    "familyBasedImmigration": "Family-Based Immigration",
+    "employmentBasedImmigration": "Employment-Based Immigration",
+    "immediateRelatives": "Immediate Relatives",
+    "immediateRelativesDescription": "U.S. citizen’s spouse, parent, or child.",
+    "immediateRelativesBadgeText": "No annual limit",
+    "familyPreference": "Family Preference",
+    "familyPreferenceDescription": "Siblings, married children, and permanent residents’ spouses/unmarried children.",
+    "familyPreferenceBadgeText": "Annual limit applies"
   }
 }
