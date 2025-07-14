@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 interface PracticeAreaOverviewProps {
   overviewTitle: string;
@@ -6,6 +8,24 @@ interface PracticeAreaOverviewProps {
   aboutHeaderText: string;
   aboutText: string;
 }
+
+const fadeInDown = {
+  hidden: { opacity: 0, y: -30 },
+  visible: (delay = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, delay },
+  }),
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (delay = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, delay },
+  }),
+};
 
 const PracticeAreaOverview: React.FC<PracticeAreaOverviewProps> = ({
   overviewTitle,
@@ -16,14 +36,44 @@ const PracticeAreaOverview: React.FC<PracticeAreaOverviewProps> = ({
   return (
     <>
       <section className="mb-10">
-        <h2 className="text-2xl font-bold mb-2 text-[#FF8426]">{overviewTitle}</h2>
-        <p className="text-gray-700">{overviewText}</p>
+        <motion.h2
+          className="text-2xl font-bold mb-2 text-[#FF8426]"
+          initial="hidden"
+          animate="visible"
+          custom={0.1}
+          variants={fadeInDown}
+        >
+          {overviewTitle}
+        </motion.h2>
+        <motion.p
+          className="text-gray-700"
+          initial="hidden"
+          animate="visible"
+          custom={0.3}
+          variants={fadeInUp}
+        >
+          {overviewText}
+        </motion.p>
       </section>
       <section className="mb-10">
-        <h2 className="text-2xl font-bold mb-2 text-[#FF8426]">
+        <motion.h2
+          className="text-2xl font-bold mb-2 text-[#FF8426]"
+          initial="hidden"
+          animate="visible"
+          custom={0.5}
+          variants={fadeInDown}
+        >
           {aboutHeaderText}
-        </h2>
-        <p className="text-gray-700">{aboutText}</p>
+        </motion.h2>
+        <motion.p
+          className="text-gray-700"
+          initial="hidden"
+          animate="visible"
+          custom={0.7}
+          variants={fadeInUp}
+        >
+          {aboutText}
+        </motion.p>
       </section>
     </>
   );

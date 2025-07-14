@@ -119,6 +119,20 @@
     "step6Label": "File I-829 petition to remove conditions after 2 years",
     "step6Description": "Submit evidence of job creation and investment.",
     "step7Label": "Receive permanent green card",
-    "step7Description": "Obtain your permanent residency status."
+    "step7Description": "Obtain your permanent residency status.",
+    "FAQTitle": "Frequently Asked Questions",
+    "question1": "How long does the EB-5 process take?",
+    "answer1": "Processing times vary, but the initial petition can take 1-2 years. The full process to permanent residency may take several years depending on individual circumstances.",
+    "question2": "Can my family members get green cards too?",
+    "answer2": "Yes, your spouse and unmarried children under 21 can be included in your EB-5 application.",
+    "question3": "Do I have to manage the business myself?",
+    "answer3": "No, you do not need to be involved in day-to-day management, but you must be involved in policy formation or as a limited partner.",
+    "contactUsTitle": "Ready to Start Your EB-5 Journey?",
+    "contactUsContent": "Contact our experienced team for a confidential consultation and personalized guidance.",
+    "contactUsButtonText": "Contact Us"
+  },
+  "Immigration": {
+    "title": "Immigration",
+    "subTitle": "The United States is a nation of immigrants. Every year, hundreds of thousands of people from foreign countries immigrate to the U.S. to pursue their American Dream through family, employment, or political asylum."
   }
 }

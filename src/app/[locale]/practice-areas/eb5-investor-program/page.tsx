@@ -102,31 +102,30 @@ const EB5InvestorProgramPage = () => {
     ],
   };
 
-  const questions = [
-    {
-      key: 'q1',
-      question: 'How long does the EB-5 process take?',
-      answer:
-        'Processing times vary, but the initial petition can take 1-2 years. The full process to permanent residency may take several years depending on individual circumstances.',
-    },
-    {
-      key: 'q2',
-      question: 'Can my family members get green cards too?',
-      answer:
-        'Yes, your spouse and unmarried children under 21 can be included in your EB-5 application.',
-    },
-    {
-      key: 'q3',
-      question: 'Do I have to manage the business myself?',
-      answer:
-        'No, you do not need to be involved in day-to-day management, but you must be involved in policy formation or as a limited partner.',
-    },
-  ];
+  const frequentlyAskedQuestions = {
+    title: t('FAQTitle'),
+    questions: [
+      {
+        key: 'q1',
+        question: t('question1'),
+        answer: t('answer1'),
+      },
+      {
+        key: 'q2',
+        question: t('question2'),
+        answer: t('answer2'),
+      },
+      {
+        key: 'q3',
+        question: t('question3'),
+        answer: t('answer3'),
+      },
+    ],
+  };
   const contactUsData = {
-    title: 'Ready to Start Your EB-5 Journey?',
-    content:
-      'Contact our experienced team for a confidential consultation and personalized guidance.',
-    buttonText: 'Contact Us',
+    title: t('contactUsTitle'),
+    content: t('contactUsContent'),
+    buttonText: t('contactUsButtonText'),
   };
 
   return (
@@ -136,7 +135,7 @@ const EB5InvestorProgramPage = () => {
       <PracticeAreaKeyBenefits {...keyBenefits} />
       <PracticeAreaBasicRequirements {...basicRequirements} />
       <PracticeAreaProcess {...processSteps} />
-      <FrequentlyAskedQuestions questions={questions} />
+      <FrequentlyAskedQuestions {...frequentlyAskedQuestions} />
       <PracticeAreaContactUs {...contactUsData} />
     </div>
   );
