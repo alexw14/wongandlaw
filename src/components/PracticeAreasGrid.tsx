@@ -7,7 +7,7 @@ const PracticeAreasGrid: React.FC = () => {
 
   const practiceAreas = [
     {
-      key: 'eb5',
+      key: 'eb5-investor-program',
       title: t('eb5Title'),
       description: t('eb5Description'),
       imageUrl: '/images/services/eb5.jpg',
