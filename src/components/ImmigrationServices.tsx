@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   FaBriefcase,
@@ -9,104 +10,122 @@ import {
   FaPassport,
   FaUserGraduate,
 } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
-const ImmigrationServices = () => {
+interface ImmigrationService {
+  key: string;
+  title: string;
+  description: string;
+}
+
+interface ImmigrationServicesProps {
+  title: string;
+  items: ImmigrationService[];
+}
+
+const getIcon = (key: string) => {
+  switch (key) {
+    case 'familyBased':
+      return <FaUserCheck className="text-2xl text-blue-500 mt-1" />;
+    case 'employmentBased':
+      return <FaBriefcase className="text-2xl text-gray-600 mt-1" />;
+    case 'strategies':
+      return <FaLightbulb className="text-2xl text-yellow-500 mt-1" />;
+    case 'eb5':
+      return <FaMoneyCheckAlt className="text-2xl text-emerald-600 mt-1" />;
+    case 'adjustmentOfStatus':
+      return <FaExchangeAlt className="text-2xl text-indigo-500 mt-1" />;
+    case 'consular':
+      return <FaUniversity className="text-2xl text-green-600 mt-1" />;
+    case 'nonImmigrant':
+      return <FaPassport className="text-2xl text-purple-500 mt-1" />;
+    case 'student':
+      return <FaUserGraduate className="text-2xl text-pink-500 mt-1" />;
+    default:
+      return null;
+  }
+};
+
+// Animation variants
+const sectionVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+};
+
+const gridVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const ImmigrationServices: React.FC<ImmigrationServicesProps> = ({
+  title,
+  items,
+}) => {
   return (
-    <section className="bg-gray-50 rounded-2xl py-12 px-4 shadow-inner">
-      <h2 className="text-3xl font-extrabold mb-8 text-[#FF8426] text-center">
-        Our Immigration Services
-      </h2>
-      <div className="grid sm:grid-cols-2 gap-6">
-        <div className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-          <FaUserCheck className="text-2xl text-blue-500 mt-1" />
-          <div>
-            <div className="font-semibold text-[#FF8426]">
-              Family-Based Visa Petitions
+    <motion.section
+      className="bg-gray-50 rounded-2xl py-12 px-4 mb-12 shadow-inner"
+      variants={sectionVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <motion.h2
+        className="text-3xl font-extrabold mb-8 text-[#FF8426] text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.7 }}
+        transition={{ duration: 0.5 }}
+      >
+        {title}
+      </motion.h2>
+      <motion.div
+        className="grid sm:grid-cols-2 gap-6"
+        variants={gridVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        {items.map((item) => (
+          <motion.div
+            key={item.key}
+            className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition"
+            variants={cardVariants}
+            whileHover={{ scale: 1.03, boxShadow: "0 4px 24px rgba(255,132,38,0.10)" }}
+          >
+            {getIcon(item.key)}
+            <div>
+              <motion.div
+                className="font-semibold text-[#FF8426]"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.7 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+              >
+                {item.title}
+              </motion.div>
+              <motion.div
+                className="text-gray-700 text-sm"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.7 }}
+                transition={{ duration: 0.4, delay: 0.18 }}
+              >
+                {item.description}
+              </motion.div>
             </div>
-            <div className="text-gray-700 text-sm">
-              All family-based immigrant visa petitions
-            </div>
-          </div>
-        </div>
-        <div className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-          <FaBriefcase className="text-2xl text-gray-600 mt-1" />
-          <div>
-            <div className="font-semibold text-[#FF8426]">
-              Employment-Based Visas
-            </div>
-            <div className="text-gray-700 text-sm">
-              EB-1A, EB-1B, EB-1C, EB-2, EB-3, and EB-5
-            </div>
-          </div>
-        </div>
-        <div className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-          <FaLightbulb className="text-2xl text-yellow-500 mt-1" />
-          <div>
-            <div className="font-semibold text-[#FF8426]">
-              L-1A & EB-1C Strategies
-            </div>
-            <div className="text-gray-700 text-sm">
-              Consultation and strategies for L-1A and EB-1C
-            </div>
-          </div>
-        </div>
-        <div className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-          <FaMoneyCheckAlt className="text-2xl text-emerald-600 mt-1" />
-          <div>
-            <div className="font-semibold text-[#FF8426]">
-              EB-5 Investor Consultation
-            </div>
-            <div className="text-gray-700 text-sm">
-              Project evaluation, source of funds strategies
-            </div>
-          </div>
-        </div>
-        <div className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-          <FaExchangeAlt className="text-2xl text-indigo-500 mt-1" />
-          <div>
-            <div className="font-semibold text-[#FF8426]">
-              Adjustment of Status
-            </div>
-            <div className="text-gray-700 text-sm">
-              Advance parole, work permits, and more
-            </div>
-          </div>
-        </div>
-        <div className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-          <FaUniversity className="text-2xl text-green-600 mt-1" />
-          <div>
-            <div className="font-semibold text-[#FF8426]">
-              Consular Processing
-            </div>
-            <div className="text-gray-700 text-sm">
-              National Visa Center and U.S. Embassy processing
-            </div>
-          </div>
-        </div>
-        <div className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-          <FaPassport className="text-2xl text-purple-500 mt-1" />
-          <div>
-            <div className="font-semibold text-[#FF8426]">
-              Non-Immigrant Visas
-            </div>
-            <div className="text-gray-700 text-sm">
-              H-1B, L-1A/L2, L-1B/L2, E-1/2, O
-            </div>
-          </div>
-        </div>
-        <div className="flex items-start gap-3 bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-          <FaUserGraduate className="text-2xl text-pink-500 mt-1" />
-          <div>
-            <div className="font-semibold text-[#FF8426]">
-              Student & Other Services
-            </div>
-            <div className="text-gray-700 text-sm">
-              Student visa (F), status changes, citizenship, I-601 waivers
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </motion.div>
+        ))}
+      </motion.div>
+    </motion.section>
   );
 };
 

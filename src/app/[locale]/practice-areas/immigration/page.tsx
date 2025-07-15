@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import PracticeAreaHeader from '@/components/PracticeAreaHeader';
 import ImmigrationPathways from '@/components/ImmigrationPathways';
 import ImmigrationServices from '@/components/ImmigrationServices';
+import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';
 
 const ImmigrationPage = () => {
   const t = useTranslations('Immigration');
@@ -21,11 +22,13 @@ const ImmigrationPage = () => {
       note: t('familyBasedImmigrationNote'),
       items: [
         {
+          key: 'immediateRelatives',
           title: t('immediateRelatives'),
           description: t('immediateRelativesDescription'),
           badgeText: t('immediateRelativesBadgeText'),
         },
         {
+          key: 'familyPreference',
           title: t('familyPreference'),
           description: t('familyPreferenceDescription'),
           badgeText: t('familyPreferenceBadgeText'),
@@ -36,20 +39,88 @@ const ImmigrationPage = () => {
       title: t('employmentBasedImmigration'),
       note: t('employmentBasedImmigrationNote'),
       items: [
-        { title: 'EB-1', description: t('eb1Description') },
-        { title: 'EB-2', description: t('eb2Description') },
-        { title: 'EB-3', description: t('eb3Description') },
-        { title: 'EB-4', description: t('eb4Description') },
-        { title: 'EB-5', description: t('eb5Description') },
+        { key: 'eb1', title: 'EB-1', description: t('eb1Description') },
+        { key: 'eb2', title: 'EB-2', description: t('eb2Description') },
+        { key: 'eb3', title: 'EB-3', description: t('eb3Description') },
+        { key: 'eb4', title: 'EB-4', description: t('eb4Description') },
+        { key: 'eb5', title: 'EB-5', description: t('eb5Description') },
       ],
     },
+  };
+
+  const immigrationServicesData = {
+    title: t('ourImmigrationServicesTitle'),
+    items: [
+      {
+        key: 'familyBased',
+        title: t('service1Title'),
+        description: t('service1Description'),
+      },
+      {
+        key: 'employmentBased',
+        title: t('service2Title'),
+        description: t('service2Description'),
+      },
+      {
+        key: 'strategies',
+        title: t('service3Title'),
+        description: t('service3Description'),
+      },
+      {
+        key: 'eb5',
+        title: t('service4Title'),
+        description: t('service4Description'),
+      },
+      {
+        key: 'adjustmentOfStatus',
+        title: t('service5Title'),
+        description: t('service5Description'),
+      },
+      {
+        key: 'consular',
+        title: t('service6Title'),
+        description: t('service6Description'),
+      },
+      {
+        key: 'nonImmigrant',
+        title: t('service7Title'),
+        description: t('service7Description'),
+      },
+      {
+        key: 'student',
+        title: t('service8Title'),
+        description: t('service8Description'),
+      },
+    ],
+  };
+
+  const frequentlyAskedQuestions = {
+    title: t('FAQTitle'),
+    questions: [
+      {
+        key: 'q1',
+        question: t('question1'),
+        answer: t('answer1'),
+      },
+      {
+        key: 'q2',
+        question: t('question2'),
+        answer: t('answer2'),
+      },
+      {
+        key: 'q3',
+        question: t('question3'),
+        answer: t('answer3'),
+      },
+    ],
   };
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <PracticeAreaHeader {...headerData} />
       <ImmigrationPathways {...immigrationData} />
-      <ImmigrationServices />
+      <ImmigrationServices {...immigrationServicesData} />
+      <FrequentlyAskedQuestions {...frequentlyAskedQuestions} />
     </div>
   );
 };

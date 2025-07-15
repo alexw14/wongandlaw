@@ -13,12 +13,14 @@ import {
 } from 'react-icons/fa';
 
 interface FamilyBasedImmigrationItem {
+  key: string;
   title: string;
   description: string;
   badgeText: string;
 }
 
 interface EmploymentBasedImmigrationItem {
+  key: string;
   title: string;
   description: string;
 }
@@ -37,32 +39,32 @@ interface ImmigrationPathwaysProps {
   };
 }
 
-const getImmigrationInfoCardIcon = (title: string) => {
-  switch (title) {
-    case 'Immediate Relatives':
+const getImmigrationInfoCardIcon = (key: string) => {
+  switch (key) {
+    case 'immediateRelatives':
       return <FaUsers className="text-3xl text-blue-500" />;
-    case 'Family Preference':
+    case 'familyPreference':
       return <FaUserFriends className="text-3xl text-purple-500" />;
-    case 'EB-1':
+    case 'eb1':
       return <FaMedal className="text-2xl text-yellow-500 mb-2" />;
-    case 'EB-2':
+    case 'eb2':
       return <FaGraduationCap className="text-2xl text-green-600 mb-2" />;
-    case 'EB-3':
+    case 'eb3':
       return <FaBriefcase className="text-2xl text-gray-600 mb-2" />;
-    case 'EB-4':
+    case 'eb4':
       return <FaGlobeAmericas className="text-2xl text-indigo-500 mb-2" />;
-    case 'EB-5':
+    case 'eb5':
       return <FaMoneyBillWave className="text-2xl text-emerald-600 mb-2" />;
     default:
       return null;
   }
 };
 
-const getBadgeClass = (title: string) => {
-  switch (title) {
-    case 'Immediate Relatives':
+const getBadgeClass = (key: string) => {
+  switch (key) {
+    case 'immediateRelatives':
       return 'inline-block bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs mt-1';
-    case 'Family Preference':
+    case 'familyPreference':
       return 'inline-block bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded text-xs mt-1';
     default:
       return '';
@@ -144,11 +146,11 @@ const ImmigrationPathways: React.FC<ImmigrationPathwaysProps> = ({
           {familyBasedImmigration.items.map((item) => (
             <motion.div key={item.title} variants={sectionVariants}>
               <ImmigrationInfoCard
-                icon={getImmigrationInfoCardIcon(item.title)}
+                icon={getImmigrationInfoCardIcon(item.key)}
                 title={item.title}
                 description={item.description}
                 badge={
-                  <span className={getBadgeClass(item.title)}>
+                  <span className={getBadgeClass(item.key)}>
                     {item.badgeText}
                   </span>
                 }
@@ -180,7 +182,7 @@ const ImmigrationPathways: React.FC<ImmigrationPathwaysProps> = ({
           {employmentBasedImmigration.items.map((item) => (
             <motion.div key={item.title} variants={sectionVariants}>
               <ImmigrationInfoCard
-                icon={getImmigrationInfoCardIcon(item.title)}
+                icon={getImmigrationInfoCardIcon(item.key)}
                 title={item.title}
                 description={item.description}
                 className="flex-col items-center text-center"

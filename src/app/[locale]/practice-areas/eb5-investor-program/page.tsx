@@ -122,6 +122,7 @@ const EB5InvestorProgramPage = () => {
       },
     ],
   };
+  
   const contactUsData = {
     title: t('contactUsTitle'),
     content: t('contactUsContent'),
