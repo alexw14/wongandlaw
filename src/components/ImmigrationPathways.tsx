@@ -177,7 +177,7 @@ const ImmigrationPathways: React.FC<ImmigrationPathwaysProps> = ({
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {employmentBasedImmigration.items.map((item, idx) => (
+          {employmentBasedImmigration.items.map((item) => (
             <motion.div key={item.title} variants={sectionVariants}>
               <ImmigrationInfoCard
                 icon={getImmigrationInfoCardIcon(item.title)}
