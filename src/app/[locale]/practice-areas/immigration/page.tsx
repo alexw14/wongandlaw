@@ -14,14 +14,41 @@ const ImmigrationPage = () => {
     subTitle: t('subTitle'),
   };
 
-  // const immigrationData = {
-  //   title: t('immigrationPathways'),
-  // }
+  const immigrationData = {
+    title: t('immigrationPathways'),
+    familyBasedImmigration: {
+      title: t('familyBasedImmigration'),
+      note: t('familyBasedImmigrationNote'),
+      items: [
+        {
+          title: t('immediateRelatives'),
+          description: t('immediateRelativesDescription'),
+          badgeText: t('immediateRelativesBadgeText'),
+        },
+        {
+          title: t('familyPreference'),
+          description: t('familyPreferenceDescription'),
+          badgeText: t('familyPreferenceBadgeText'),
+        },
+      ],
+    },
+    employmentBasedImmigration: {
+      title: t('employmentBasedImmigration'),
+      note: t('employmentBasedImmigrationNote'),
+      items: [
+        { title: 'EB-1', description: t('eb1Description') },
+        { title: 'EB-2', description: t('eb2Description') },
+        { title: 'EB-3', description: t('eb3Description') },
+        { title: 'EB-4', description: t('eb4Description') },
+        { title: 'EB-5', description: t('eb5Description') },
+      ],
+    },
+  };
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <PracticeAreaHeader {...headerData} />
-      <ImmigrationPathways />
+      <ImmigrationPathways {...immigrationData} />
       <ImmigrationServices />
     </div>
   );

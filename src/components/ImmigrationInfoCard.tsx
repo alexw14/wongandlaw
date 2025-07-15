@@ -15,6 +15,15 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
+const textVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.15 * i, duration: 0.5 }
+  }),
+};
+
 const ImmigrationInfoCard: React.FC<ImmigrationInfoCardProps> = ({
   icon,
   title,
@@ -32,11 +41,27 @@ const ImmigrationInfoCard: React.FC<ImmigrationInfoCardProps> = ({
   >
     {icon}
     <div>
-      <h3 className="font-bold text-[#FF8426] mb-1">{title}</h3>
-      <p className="text-gray-700 text-sm">
+      <motion.h3
+        className="font-bold text-[#FF8426] mb-1"
+        variants={textVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.7 }}
+        custom={0}
+      >
+        {title}
+      </motion.h3>
+      <motion.p
+        className="text-gray-700 text-sm"
+        variants={textVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.7 }}
+        custom={1}
+      >
         {description}
         {badge && <><br />{badge}</>}
-      </p>
+      </motion.p>
     </div>
   </motion.div>
 );

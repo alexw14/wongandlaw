@@ -133,6 +133,22 @@
   },
   "Immigration": {
     "title": "移民",
-    "subTitle": "美國是一個由移民組成的國家。每年有數十萬來自其他國家的民眾透過家庭、工作或政治庇護移民到美國，追求他們的美國夢。"
+    "subTitle": "美國是一個由移民組成的國家。每年有數十萬來自其他國家的民眾透過家庭、工作或政治庇護移民到美國，追求他們的美國夢。",
+    "immigrationPathways": "移民途徑",
+    "familyBasedImmigration": "家庭為本移民",
+    "familyBasedImmigrationNote": "在申請審理期間，如情況發生變化（例如美國公民申請人去世、子女年滿21歲或離婚），可能會引發問題。",
+    "employmentBasedImmigration": "就業為本移民",
+    "employmentBasedImmigrationNote": "其他非移民工作簽證包括 H-1B、L-1A、L-1B、O、E-1/2、J 等。許多持有非移民簽證的人可以調整身份成為永久居民。但逾期居留或刑事紀錄等法律問題可能影響資格。",
+    "immediateRelatives": "直系親屬",
+    "immediateRelativesDescription": "美國公民的配偶、父母或子女。",
+    "immediateRelativesBadgeText": "無年度名額限制",
+    "familyPreference": "家庭優先類別",
+    "familyPreferenceDescription": "兄弟姊妹、已婚子女，以及永久居民的配偶／未婚子女。",
+    "familyPreferenceBadgeText": "受年度名額限制",
+    "eb1Description": "具優先資格的工作者及具傑出能力人士",
+    "eb2Description": "高等學位及具特殊才能人士",
+    "eb3Description": "技術工人、專業人員及非技術工人",
+    "eb4Description": "特殊移民（例如牧師）",
+    "eb5Description": "投資移民"
   }
 }
