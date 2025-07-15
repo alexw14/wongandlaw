@@ -32,7 +32,7 @@ const ImmigrationInfoCard: React.FC<ImmigrationInfoCardProps> = ({
   className = '',
 }) => (
   <motion.div
-    className={`bg-white rounded-xl shadow p-5 flex gap-3 ${className}`}
+    className={`bg-white rounded-xl h-full shadow p-5 flex gap-3 ${className}`}
     variants={cardVariants}
     initial="hidden"
     whileInView="visible"

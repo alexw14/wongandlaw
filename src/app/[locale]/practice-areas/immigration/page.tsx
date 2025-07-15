@@ -4,6 +4,7 @@ import PracticeAreaHeader from '@/components/PracticeAreaHeader';
 import ImmigrationPathways from '@/components/ImmigrationPathways';
 import ImmigrationServices from '@/components/ImmigrationServices';
 import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';
+import PracticeAreaContactUs from '@/components/PracticeAreaContactUs';
 
 const ImmigrationPage = () => {
   const t = useTranslations('Immigration');
@@ -115,12 +116,19 @@ const ImmigrationPage = () => {
     ],
   };
 
+  const contactUsData = {
+    title: t('contactUsTitle'),
+    content: t('contactUsContent'),
+    buttonText: t('contactUsButtonText'),
+  };
+
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
+    <div className="max-w-5xl mx-auto px-4 py-12">
       <PracticeAreaHeader {...headerData} />
       <ImmigrationPathways {...immigrationData} />
       <ImmigrationServices {...immigrationServicesData} />
       <FrequentlyAskedQuestions {...frequentlyAskedQuestions} />
+      <PracticeAreaContactUs {...contactUsData}/>
     </div>
   );
 };
