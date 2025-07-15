@@ -136,12 +136,19 @@
     "subTitle": "The United States is a nation of immigrants. Every year, hundreds of thousands of people from foreign countries immigrate to the U.S. to pursue their American Dream through family, employment, or political asylum.",
     "immigrationPathways": "Immigration Pathways",
     "familyBasedImmigration": "Family-Based Immigration",
+    "familyBasedImmigrationNote": "Issues can arise due to changes in circumstances while petitions are pending (e.g., death of a U.S. citizen, a child turning 21, or divorce).",
     "employmentBasedImmigration": "Employment-Based Immigration",
+    "employmentBasedImmigrationNote": "Other non-immigrant working visas include H-1B, L-1A, L-1B, O, E-1/2, J, etc. Many holding non-immigrant visas may adjust status to permanent resident. Legal issues such as overstaying or criminal records can affect eligibility.",
     "immediateRelatives": "Immediate Relatives",
     "immediateRelativesDescription": "U.S. citizen’s spouse, parent, or child.",
     "immediateRelativesBadgeText": "No annual limit",
     "familyPreference": "Family Preference",
     "familyPreferenceDescription": "Siblings, married children, and permanent residents’ spouses/unmarried children.",
-    "familyPreferenceBadgeText": "Annual limit applies"
+    "familyPreferenceBadgeText": "Annual limit applies",
+    "eb1Description": "Priority workers & extraordinary ability",
+    "eb2Description": "Advanced degrees & exceptional ability",
+    "eb3Description": "Skilled, professional, unskilled workers",
+    "eb4Description": "Special immigrants (e.g., ministers)",
+    "eb5Description": "Immigrant investors"
   }
 }

@@ -133,6 +133,22 @@
   },
   "Immigration": {
     "title": "移民",
-    "subTitle": "美国是一个由移民组成的国家。每年有数十万来自其他国家的人通过家庭、工作或政治庇护移民到美国，追求他们的美国梦。"
+    "subTitle": "美国是一个由移民组成的国家。每年有数十万来自其他国家的人通过家庭、工作或政治庇护移民到美国，追求他们的美国梦。",
+    "immigrationPathways": "移民途径",
+    "familyBasedImmigration": "家庭为本移民",
+    "familyBasedImmigrationNote": "在申请审理期间，如果情况发生变化（例如美国公民申请人去世、子女年满21岁或离婚），可能会出现问题。",
+    "employmentBasedImmigration": "就业为本移民",
+    "employmentBasedImmigrationNote": "其他非移民工作签证包括 H-1B、L-1A、L-1B、O、E-1/2、J 等。许多持有非移民签证的人可以调整身份成为永久居民。但逾期居留或刑事记录等法律问题可能会影响资格。",
+    "immediateRelatives": "直系亲属",
+    "immediateRelativesDescription": "美国公民的配偶、父母或子女。",
+    "immediateRelativesBadgeText": "无年度名额限制",
+    "familyPreference": "家庭优先类别",
+    "familyPreferenceDescription": "兄弟姐妹、已婚子女，以及永久居民的配偶／未婚子女。",
+    "familyPreferenceBadgeText": "受年度名额限制",
+    "eb1Description": "优先类别工作者及具有杰出能力人士",
+    "eb2Description": "高等学位及具有特殊才能人士",
+    "eb3Description": "技术工人、专业人员及非技术工人",
+    "eb4Description": "特殊移民（例如牧师）",
+    "eb5Description": "投资移民"
   }
 }
