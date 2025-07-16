@@ -61,7 +61,7 @@ const RecentNewsSection = () => {
             {t('title')}
           </h2>
           <Link
-            href="/blog"
+            href="/news-blogs"
             className="bg-[#FF8426] hover:bg-[#e6731f] text-white font-semibold px-6 py-2 rounded-full shadow transition-colors duration-200 text-base"
           >
             {t('viewAllBtnText')}
@@ -88,7 +88,7 @@ const RecentNewsSection = () => {
                 <p className="text-gray-700 mb-4 flex-1">{blog.excerpt}</p>
                 <Link
                   href={blog.href}
-                  className="mt-auto inline-block text-[#FF8426] font-semibold hover:underline"
+                  className="mt-auto inline-block text-[#FF8426] font-semibold hover:underline pointer-events-none"
                 >
                   Read More &rarr;
                 </Link>

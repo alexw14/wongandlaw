@@ -71,7 +71,7 @@ const LegalServicesSection: React.FC = () => {
       icon: <FaGavel className="text-3xl text-[#FF8426] mb-2" />,
       description: t('ecommerceAndIPDescription'),
       buttonText: t('ecommerceAndIPButtonText'),
-      href: '/practice-areas/ecommerce-intellectual-property',
+      href: '/practice-areas/e-commerce-intellectual-property',
       image: '/images/services/ecommerce-ip.jpg',
     },
     {

@@ -1,6 +1,6 @@
 import ComingSoon from '@/components/ComingSoon';
 
-const ProfessionalsPage = () => {
+const LegalDisclaimerPage = () => {
   return (
     <div>
       <ComingSoon />
@@ -8,4 +8,4 @@ const ProfessionalsPage = () => {
   );
 };
 
-export default ProfessionalsPage;
+export default LegalDisclaimerPage;

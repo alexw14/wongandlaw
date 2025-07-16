@@ -1,8 +1,9 @@
+import ComingSoon from '@/components/ComingSoon';
+
 const NewsBlogsPage = () => {
   return (
     <div>
-      <h1>News & Blogs</h1>
-      <p>Welcome to the News & Blogs page!</p>
+      <ComingSoon />
     </div>
   );
 };
