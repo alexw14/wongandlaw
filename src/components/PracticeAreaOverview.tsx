@@ -37,7 +37,7 @@ const PracticeAreaOverview: React.FC<PracticeAreaOverviewProps> = ({
     <>
       <section className="mb-10">
         <motion.h2
-          className="text-2xl font-bold mb-2 text-[#FF8426]"
+          className="text-2xl font-bold mb-2 text-orange-500"
           initial="hidden"
           animate="visible"
           custom={0.1}
@@ -57,7 +57,7 @@ const PracticeAreaOverview: React.FC<PracticeAreaOverviewProps> = ({
       </section>
       <section className="mb-10">
         <motion.h2
-          className="text-2xl font-bold mb-2 text-[#FF8426]"
+          className="text-2xl font-bold mb-2 text-orange-500"
           initial="hidden"
           animate="visible"
           custom={0.5}

@@ -36,7 +36,7 @@ const Headers: React.FC = () => {
         className={`transition-colors duration-300 ${
           showWhiteBg
             ? 'bg-white shadow-md' // Add shadow when white background is active
-            : 'bg-[#FF8426] text-white'
+            : 'bg-orange-500 text-white'
         }`}
       >
         <div className="container mx-auto flex justify-between items-center py-4 px-4">
@@ -84,7 +84,7 @@ const Headers: React.FC = () => {
           onClick={() => setMenuOpen(false)}
         >
           <nav
-            className={`fixed top-0 right-0 h-full w-64 bg-[#FF8426] text-white shadow-lg transform transition-transform duration-300 ${
+            className={`fixed top-0 right-0 h-full w-64 bg-orange-500 text-white shadow-lg transform transition-transform duration-300 ${
               menuOpen ? 'translate-x-0' : 'translate-x-full'
             }`}
             onClick={(e) => e.stopPropagation()}

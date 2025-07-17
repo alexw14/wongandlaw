@@ -6,7 +6,7 @@ const PracticeAreasHeader: React.FC = () => {
 
   return (
     <div className="mb-12 text-center pt-12 sm:pt-20">
-      <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-[#FF8426] drop-shadow-sm tracking-tight">
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-orange-500 drop-shadow-sm tracking-tight">
         {t('title')}
       </h1>
       <div className="mx-auto max-w-3xl">
@@ -17,7 +17,7 @@ const PracticeAreasHeader: React.FC = () => {
         </p>
       </div>
       <div className="mt-6 flex justify-center">
-        <span className="inline-block w-24 h-1 rounded bg-[#FF8426] opacity-80" />
+        <span className="inline-block w-24 h-1 rounded bg-orange-500 opacity-80" />
       </div>
     </div>
   );

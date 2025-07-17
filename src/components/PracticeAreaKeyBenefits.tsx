@@ -32,7 +32,7 @@ const PracticeAreaKeyBenefits: React.FC<KeyBenefitsProps> = ({
       viewport={{ once: true, amount: 0.3 }}
     >
       <motion.h2
-        className="text-2xl font-bold mb-4 text-[#FF8426]"
+        className="text-2xl font-bold mb-4 text-orange-500"
         variants={{
           hidden: { opacity: 0, y: -20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -44,12 +44,12 @@ const PracticeAreaKeyBenefits: React.FC<KeyBenefitsProps> = ({
         {benefits.map((benefit, i) => (
           <motion.div
             key={benefit.title}
-            className="bg-[#FFFAF3] rounded-lg p-4 flex items-center gap-3 shadow-sm"
+            className="bg-orange-100 rounded-lg p-4 flex items-center gap-3 shadow-sm"
             custom={i}
             variants={cardVariants}
             whileHover={{ scale: 1.03, boxShadow: "0 4px 24px rgba(255,132,38,0.10)" }}
           >
-            <span className="text-2xl text-[#FF8426]">✔</span>
+            <span className="text-2xl text-orange-500">✔</span>
             <span>{benefit.title}</span>
           </motion.div>
         ))}

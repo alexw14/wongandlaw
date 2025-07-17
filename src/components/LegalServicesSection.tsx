@@ -13,9 +13,9 @@ import { useTranslations } from 'next-intl';
 
 const tabVariants = {
   active:
-    'bg-[#FF8426] text-white font-bold shadow-md border-none ring-2 ring-[#FF8426] transition-all duration-200 cursor-pointer',
+    'bg-orange-500 text-white font-bold shadow-md border-none ring-2 ring-orange-500 transition-all duration-200 cursor-pointer',
   inactive:
-    'bg-white text-gray-700 hover:bg-orange-100 hover:text-[#FF8426] border border-gray-200 shadow-sm transition-all duration-200 cursor-pointer',
+    'bg-white text-gray-700 hover:bg-orange-100 hover:text-orange-500 border border-gray-200 shadow-sm transition-all duration-200 cursor-pointer',
 };
 
 const contentVariants = {
@@ -36,7 +36,7 @@ const LegalServicesSection: React.FC = () => {
   const services = [
     {
       label: t('eb5InvestorProgram'),
-      icon: <FaChartLine className="text-3xl text-[#FF8426] mb-2" />,
+      icon: <FaChartLine className="text-3xl text-orange-500 mb-2" />,
       description: t('eb5InvestorProgramDescription'),
       buttonText: t('eb5InvestorProgramButtonText'),
       href: '/practice-areas/eb5-investor-program',
@@ -44,7 +44,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('immigration'),
-      icon: <FaGlobe className="text-3xl text-[#FF8426] mb-2" />,
+      icon: <FaGlobe className="text-3xl text-orange-500 mb-2" />,
       description: t('immigrationDescription'),
       buttonText: t('immigrationButtonText'),
       href: '/practice-areas/immigration',
@@ -52,7 +52,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('businessEntities'),
-      icon: <FaBuilding className="text-3xl text-[#FF8426] mb-2" />,
+      icon: <FaBuilding className="text-3xl text-orange-500 mb-2" />,
       description: t('businessEntitiesDescription'),
       buttonText: t('businessEntitiesButtonText'),
       href: '/practice-areas/business-entities-corporate-governance',
@@ -60,7 +60,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('businessTransactions'),
-      icon: <FaHandshake className="text-3xl text-[#FF8426] mb-2" />,
+      icon: <FaHandshake className="text-3xl text-orange-500 mb-2" />,
       description: t('businessTransactionsDescription'),
       buttonText: t('businessTransactionsButtonText'),
       href: '/practice-areas/business-transactions',
@@ -68,7 +68,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('ecommerceAndIP'),
-      icon: <FaGavel className="text-3xl text-[#FF8426] mb-2" />,
+      icon: <FaGavel className="text-3xl text-orange-500 mb-2" />,
       description: t('ecommerceAndIPDescription'),
       buttonText: t('ecommerceAndIPButtonText'),
       href: '/practice-areas/e-commerce-intellectual-property',
@@ -76,7 +76,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('assetsProtection'),
-      icon: <FaShieldAlt className="text-3xl text-[#FF8426] mb-2" />,
+      icon: <FaShieldAlt className="text-3xl text-orange-500 mb-2" />,
       description: t('assetsProtectionDescription'),
       buttonText: t('assetsProtectionButtonText'),
       href: '/practice-areas/assets-protection-estate-planning',
@@ -93,7 +93,7 @@ const LegalServicesSection: React.FC = () => {
       variants={sectionVariants}
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#FF8426] text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-orange-500 text-center">
           {t('legalServicesTitle')}
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
@@ -148,7 +148,7 @@ const LegalServicesSection: React.FC = () => {
                   {/* Hide button in overlay on mobile, show on md+ */}
                   <Link
                     href={services[active].href}
-                    className="hidden md:inline-block bg-[#FF8426] hover:bg-[#e6731f] text-white font-semibold px-6 py-2 rounded-full shadow transition-colors duration-200 text-base"
+                    className="hidden md:inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full shadow transition-colors duration-200 text-base"
                   >
                     {services[active].buttonText}
                   </Link>
@@ -158,7 +158,7 @@ const LegalServicesSection: React.FC = () => {
             {/* Show button below image on mobile only */}
             <Link
               href={services[active].href}
-              className="mt-4 md:hidden inline-block bg-[#FF8426] hover:bg-[#e6731f] text-white font-semibold px-4 py-2 rounded-full shadow transition-colors duration-200 text-sm"
+              className="mt-4 md:hidden inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-full shadow transition-colors duration-200 text-sm"
             >
               {services[active].buttonText}
             </Link>

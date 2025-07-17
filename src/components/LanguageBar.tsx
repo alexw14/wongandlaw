@@ -26,8 +26,8 @@ const LanguageBar: React.FC = () => {
           disabled={currentLocale === locale.code}
           className={`mx-2 flex items-center ${
             currentLocale === locale.code
-              ? 'font-bold text-[#FF8426] cursor-default'
-              : 'hover:text-[#FF8426] cursor-pointer'
+              ? 'font-bold text-orange-500 cursor-default'
+              : 'hover:text-orange-500 cursor-pointer'
           }`}
           aria-current={currentLocale === locale.code ? 'page' : undefined}
         >

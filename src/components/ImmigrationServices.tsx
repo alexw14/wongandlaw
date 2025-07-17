@@ -79,7 +79,7 @@ const ImmigrationServices: React.FC<ImmigrationServicesProps> = ({
       viewport={{ once: true, amount: 0.2 }}
     >
       <motion.h2
-        className="text-3xl font-extrabold mb-8 text-[#FF8426] text-center"
+        className="text-3xl font-extrabold mb-8 text-orange-500 text-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.7 }}
@@ -104,7 +104,7 @@ const ImmigrationServices: React.FC<ImmigrationServicesProps> = ({
             {getIcon(item.key)}
             <div>
               <motion.div
-                className="font-semibold text-[#FF8426]"
+                className="font-semibold text-orange-500"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.7 }}

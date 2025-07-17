@@ -42,7 +42,7 @@ const NavMenu: React.FC<NavMenuProps> = ({ vertical = false, onLinkClick }) => {
     >
       {navItems.map((item) => (
         <motion.nav key={item.href} variants={itemVariants} transition={{ duration: 0.5, ease: "easeOut" }}>
-          <Link href={item.href} className="hover:text-[#FF8426]" onClick={onLinkClick}>
+          <Link href={item.href} className="hover:text-orange-500" onClick={onLinkClick}>
             {item.label}
           </Link>
         </motion.nav>

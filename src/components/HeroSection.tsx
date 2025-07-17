@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
         </p>
         <Link
           href="/practice-areas"
-          className="bg-[#FF8426] hover:bg-[#e6731f] text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-colors duration-200 text-base sm:text-lg w-full sm:w-auto cursor-pointer text-center"
+          className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-colors duration-200 text-base sm:text-lg w-full sm:w-auto cursor-pointer text-center"
         >
           {t('buttonText')}
         </Link>

@@ -47,7 +47,7 @@ const PracticeAreaBasicRequirements: React.FC<PracticeAreaBasicRequirementsProps
       viewport={{ once: true, amount: 0.3 }}
     >
       <motion.h2
-        className="text-2xl font-bold mb-4 text-[#FF8426]"
+        className="text-2xl font-bold mb-4 text-orange-500"
         variants={{
           hidden: { opacity: 0, y: -20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -64,7 +64,7 @@ const PracticeAreaBasicRequirements: React.FC<PracticeAreaBasicRequirementsProps
             variants={cardVariants}
             whileHover={{ scale: 1.03, boxShadow: "0 4px 24px rgba(255,132,38,0.10)" }}
           >
-            <summary className="font-semibold text-[#FF8426] cursor-pointer">
+            <summary className="font-semibold text-orange-500 cursor-pointer">
               {requirement.title}
             </summary>
             <p className="mt-2 text-gray-700 text-sm">

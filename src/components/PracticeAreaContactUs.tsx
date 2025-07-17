@@ -22,7 +22,7 @@ const PracticeAreaContactUs: React.FC<ContactUsData> = ({
       viewport={{ once: true, amount: 0.3 }}
     >
       <motion.h3
-        className="text-2xl font-bold mb-4 text-[#FF8426]"
+        className="text-2xl font-bold mb-4 text-orange-500"
         variants={{
           hidden: { opacity: 0, y: -20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -47,7 +47,7 @@ const PracticeAreaContactUs: React.FC<ContactUsData> = ({
       >
         <Link
           href="/contact"
-          className="inline-block bg-[#FF8426] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e6731f] transition-colors"
+          className="inline-block bg-orange-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600 transition-colors"
         >
           {buttonText}
         </Link>

@@ -34,7 +34,7 @@ const FrequentlyAskedQuestions: React.FC<FrequentlyAskedQuestionsProp> = ({
       viewport={{ once: true, amount: 0.3 }}
     >
       <motion.h2
-        className="text-2xl font-bold mb-4 text-[#FF8426]"
+        className="text-2xl font-bold mb-4 text-orange-500"
         variants={{
           hidden: { opacity: 0, y: -20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },

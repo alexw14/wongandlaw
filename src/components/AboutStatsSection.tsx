@@ -38,7 +38,7 @@ const AboutStatsSection: React.FC = () => {
         </div>
         {/* Text - Right Side */}
         <div className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-[#FF8426]">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-orange-500">
             {t('aboutTitle')}
           </h2>
           <p className="text-lg sm:text-xl mb-4 text-gray-700">
@@ -49,7 +49,7 @@ const AboutStatsSection: React.FC = () => {
           </p>
           <Link
             href="/professionals"
-            className="inline-block bg-[#FF8426] hover:bg-[#e6731f] text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-colors duration-200 text-base sm:text-lg mx-auto md:mx-0"
+            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-colors duration-200 text-base sm:text-lg mx-auto md:mx-0"
           >
             {t('meetOurTeam')}
           </Link>

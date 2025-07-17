@@ -42,7 +42,7 @@ const ImmigrationInfoCard: React.FC<ImmigrationInfoCardProps> = ({
     {icon}
     <div>
       <motion.h3
-        className="font-bold text-[#FF8426] mb-1"
+        className="font-bold text-orange-500 mb-1"
         variants={textVariants}
         initial="hidden"
         whileInView="visible"

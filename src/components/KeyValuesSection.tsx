@@ -12,17 +12,17 @@ const KeyValuesSection: React.FC = () => {
 
   const keyValues = [
     {
-      icon: <FaBriefcase className="text-4xl text-[#FF8426] mb-4" />,
+      icon: <FaBriefcase className="text-4xl text-orange-500 mb-4" />,
       title: t('extensiveExperience'),
       description: t('extensiveExperienceDescription'),
     },
     {
-      icon: <FaGlobeAmericas className="text-4xl text-[#FF8426] mb-4" />,
+      icon: <FaGlobeAmericas className="text-4xl text-orange-500 mb-4" />,
       title: t('globalPerspective'),
       description: t('globalPerspectiveDescription'),
     },
     {
-      icon: <FaComments className="text-4xl text-[#FF8426] mb-4" />,
+      icon: <FaComments className="text-4xl text-orange-500 mb-4" />,
       title: t('internationalSupport'),
       description: t('internationalSupportDescription'),
     },

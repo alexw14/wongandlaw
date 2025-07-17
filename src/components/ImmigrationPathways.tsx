@@ -110,7 +110,7 @@ const ImmigrationPathways: React.FC<ImmigrationPathwaysProps> = ({
       viewport={{ once: true, amount: 0.2 }}
     >
       <motion.h2
-        className="text-3xl font-extrabold mb-2 text-[#FF8426] text-center"
+        className="text-3xl font-extrabold mb-2 text-orange-500 text-center"
         variants={headingVariants}
       >
         {title}
@@ -122,7 +122,7 @@ const ImmigrationPathways: React.FC<ImmigrationPathwaysProps> = ({
         animate="visible"
       >
         <motion.span
-          className="block w-16 h-1 bg-[#FF8426] rounded-full"
+          className="block w-16 h-1 bg-orange-500 rounded-full"
           variants={underlineVariants}
         />
       </motion.div>
@@ -131,7 +131,7 @@ const ImmigrationPathways: React.FC<ImmigrationPathwaysProps> = ({
         variants={headingVariants}
       >
         <motion.h3
-          className="text-xl font-bold mb-4 text-[#FF8426]"
+          className="text-xl font-bold mb-4 text-orange-500"
           variants={headingVariants}
         >
           {familyBasedImmigration.title}
@@ -167,7 +167,7 @@ const ImmigrationPathways: React.FC<ImmigrationPathwaysProps> = ({
       </motion.div>
       <motion.div variants={headingVariants}>
         <motion.h3
-          className="text-xl font-bold mb-4 text-[#FF8426]"
+          className="text-xl font-bold mb-4 text-orange-500"
           variants={headingVariants}
         >
           {employmentBasedImmigration.title}

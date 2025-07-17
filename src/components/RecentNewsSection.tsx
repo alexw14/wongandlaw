@@ -57,12 +57,12 @@ const RecentNewsSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header row */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#FF8426]">
+          <h2 className="text-3xl sm:text-4xl font-bold text-orange-500">
             {t('title')}
           </h2>
           <Link
             href="/news-blogs"
-            className="bg-[#FF8426] hover:bg-[#e6731f] text-white font-semibold px-6 py-2 rounded-full shadow transition-colors duration-200 text-base"
+            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-full shadow transition-colors duration-200 text-base"
           >
             {t('viewAllBtnText')}
           </Link>
@@ -88,7 +88,7 @@ const RecentNewsSection = () => {
                 <p className="text-gray-700 mb-4 flex-1">{blog.excerpt}</p>
                 <Link
                   href={blog.href}
-                  className="mt-auto inline-block text-[#FF8426] font-semibold hover:underline pointer-events-none"
+                  className="mt-auto inline-block text-orange-500 font-semibold hover:underline pointer-events-none"
                 >
                   Read More &rarr;
                 </Link>
