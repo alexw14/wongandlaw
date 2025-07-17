@@ -43,7 +43,12 @@ const Headers: React.FC = () => {
           <div className="flex-shrink-0">
             <h1 className="text-xl sm:text-2xl font-bold whitespace-nowrap">
               <Link href='/'>
-                Wong & Partners
+                <img 
+                  src={showWhiteBg ? "/images/logo_orange.png" : "/images/logo_white.png"}
+                  alt="Wong & Partners Logo"
+                  className="h-8 sm:h-10 w-auto"
+                  style={{maxWidth: 180}}
+                />
               </Link>
             </h1>
           </div>
