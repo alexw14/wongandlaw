@@ -187,5 +187,22 @@
     "aboutTonyText1": "凭借多个司法管辖区的法律知识与经验，黄律师及其团队提供专业法律服务，涵盖商业及投资移民、商业交易、公司治理、资产保护及知识产权。",
     "aboutTonyText2": "黄律师亦曾担任中国浙江万里学院的访问教授，教授美国民事诉讼及知识产权法。",
     "meetOurTeamBtn": "认识我们的团队"
+  },
+  "MeetOurTeam": {
+    "title": "认识我们的团队",
+    "subTitle": "我们的团队是本所成功的基础。每位成员都带来独特的法律专业知识与文化理解。在黄律师的领导下，我们的律师和管理人员致力于提供专业、贴心且高效的法律服务。凭借多元背景及跨多个司法管辖区的经验，我们承诺以关怀与诚信引导客户处理复杂的法律事务。",
+    "ViewProfileBtnText": "详细介绍",
+    "lawyersText": "律师团队",
+    "managersText": "主管团队",
+    "tonyWongTitle": "创始人兼管理合伙人",
+    "benjaminHungTitle": "法律顾问",
+    "patriciaRayTitle": "高级法律顾问",
+    "douglasIngrahamTitle": "高级法律顾问",
+    "linziTseTitle": "法律合规审查专员, 香港律师",
+    "anabelZhuTitle": "办公室经理",
+    "manlinYuTitle": "助理案件经理",
+    "amyLiuTitle": "案件处理经理",
+    "lillyJiaTitle": "案件处理经理",
+    "terryYipTitle": "中国区首席代表"
   }
 }
