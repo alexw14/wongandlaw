@@ -1,11 +1,10 @@
-import ComingSoon from '@/components/ComingSoon';
+import React from 'react';
+import AboutUs from '@/components/AboutUs';
 
-const AboutPage = () => {
-  return (
-    <div>
-      <ComingSoon />
-    </div>
-  );
-};
+const AboutPage = () => (
+  <>
+    <AboutUs />
+  </>
+);
 
 export default AboutPage;

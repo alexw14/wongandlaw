@@ -177,5 +177,15 @@
     "contactUsTitle": "Ready to Start Your Immigration Journey?",
     "contactUsContent": "Contact us today to schedule a consultation with our experienced immigration attorneys. We’re here to answer your questions and guide you through every step of the process.",
     "contactUsButtonText": "Request a Consultation"
+  },
+  "AboutUs": {
+    "title": "About Us",
+    "subTitle": "Wong & Partners, Lawyers was founded by Tony W. Wong, Esq. in 2008. Our firm brings together international experience and a commitment to serving clients in the U.S. and Asia.",
+    "ourStoryTitle": "Our Story",
+    "ourStoryText1": "Tony W. Wong, Esq. immigrated to the U.S. from Hong Kong in 2000, after earning his LL.B. from the University of Hong Kong and a master’s in comparative and Chinese law from City University of Hong Kong. He continued his legal studies in the U.S., earning a J.D. from the University of West Los Angeles and a master’s in media and intellectual property law from Southwestern Law School.",
+    "ourStoryText2": "Mr. Wong has been admitted to practice law in California, Hong Kong, and England & Wales. In 2008, he founded Wong & Partners, Lawyers to provide cross-border legal services with integrity and expertise.",
+    "aboutTonyText1": "With legal knowledge and experience in multiple jurisdictions, Mr. Wong and his team provide professional legal services in business and investment immigration, business transactions, corporate governance, asset protection, and intellectual property.",
+    "aboutTonyText2": "Mr. Wong has also served as a visiting professor at Zhejiang Wanli University in China, teaching U.S. civil litigation and intellectual property law.",
+    "meetOurTeamBtn": "Meet Our Team"
   }
 }

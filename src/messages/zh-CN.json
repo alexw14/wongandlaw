@@ -177,5 +177,15 @@
     "contactUsTitle": "准备好开始您的移民旅程了吗？",
     "contactUsContent": "今天就联系我们，与经验丰富的移民律师预约咨询。我们随时为您解答疑问，并在每一步流程中为您提供指引。",
     "contactUsButtonText": "预约咨询"
+  },
+  "AboutUs": {
+    "title": "关于我们",
+    "subTitle": "Wong & Partners, Lawyers 由 Tony W. Wong, Esq. 于 2008 年创立。 本所结合国际经验，致力于为美国及亚洲的客户提供服务。",
+    "ourStoryTitle": "我们的故事",
+    "ourStoryText1": "Tony W. Wong, Esq. 于2000年从香港移民到美国，先前毕业于香港大学取得法律学士（LL.B.）学位，并于香港城市大学取得比较及中国法律硕士学位。他在美国继续法律学习，取得西洛杉矶大学法学院的法学博士（J.D.）以及西南法学院的媒体与知识产权法律硕士学位。",
+    "ourStoryText2": "黄律师获准在加州、香港及英格兰与威尔士执业。2008年，他创立了 Wong & Partners, Lawyers，致力于以诚信和专业提供跨境法律服务。",
+    "aboutTonyText1": "凭借多个司法管辖区的法律知识与经验，黄律师及其团队提供专业法律服务，涵盖商业及投资移民、商业交易、公司治理、资产保护及知识产权。",
+    "aboutTonyText2": "黄律师亦曾担任中国浙江万里学院的访问教授，教授美国民事诉讼及知识产权法。",
+    "meetOurTeamBtn": "认识我们的团队"
   }
 }
