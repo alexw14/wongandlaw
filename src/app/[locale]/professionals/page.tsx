@@ -1,10 +1,11 @@
-import ComingSoon from '@/components/ComingSoon';
+import React from 'react';
+import MeetOurTeam from '@/components/MeetOurTeam';
 
 const ProfessionalsPage = () => {
   return (
-    <div>
-      <ComingSoon />
-    </div>
+    <>
+      <MeetOurTeam />
+    </>
   );
 };
 

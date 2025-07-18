@@ -187,5 +187,22 @@
     "aboutTonyText1": "憑藉多個司法管轄區的法律知識與經驗，黃律師及其團隊提供專業法律服務，涵蓋商業及投資移民、商業交易、公司治理、資產保護及知識產權。",
     "aboutTonyText2": "黃律師亦曾擔任中國浙江萬里學院的訪問教授，教授美國民事訴訟及知識產權法。",
     "meetOurTeamBtn": "認識我們的團隊"
+  },
+  "MeetOurTeam": {
+    "title": "認識我們的團隊",
+    "subTitle": "我們的團隊是本所成功的基礎。每位成員都帶來獨特的法律專業知識與文化理解。在黃律師的領導下，我們的律師和管理人員致力於提供專業、貼心且高效的法律服務。憑藉多元背景及跨多個司法管轄區的經驗，我們承諾以關懷與誠信引導客戶處理複雜的法律事務。",
+    "ViewProfileBtnText": "詳細介紹",
+    "lawyersText": "律師團隊",
+    "managersText": "主管團隊",
+    "tonyWongTitle": "創始人兼管理合夥人",
+    "benjaminHungTitle": "法律顧問",
+    "patriciaRayTitle": "高级法律顾问",
+    "douglasIngrahamTitle": "高級法律顧問",
+    "linziTseTitle": "法律合規審查專員， 香港律師",
+    "anabelZhuTitle": "辦公室經理",
+    "manlinYuTitle": "助理案件經理",
+    "amyLiuTitle": "案件處理經理",
+    "lillyJiaTitle": "案件處理經理",
+    "terryYipTitle": "中國區首席代表"
   }
 }

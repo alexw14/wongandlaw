@@ -187,5 +187,22 @@
     "aboutTonyText1": "With legal knowledge and experience in multiple jurisdictions, Mr. Wong and his team provide professional legal services in business and investment immigration, business transactions, corporate governance, asset protection, and intellectual property.",
     "aboutTonyText2": "Mr. Wong has also served as a visiting professor at Zhejiang Wanli University in China, teaching U.S. civil litigation and intellectual property law.",
     "meetOurTeamBtn": "Meet Our Team"
+  },
+  "MeetOurTeam": {
+    "title": "Meet Our Team",
+    "subTitle": "Our team is the foundation of our firm’s success. Each member brings a unique blend of legal expertise and cultural understanding. Led by Tony W. Wong, Esq., our attorneys and managers are dedicated to providing professional, compassionate, and effective legal services. With diverse backgrounds and experience across multiple jurisdictions, we are committed to guiding clients through complex legal matters with care and integrity.",
+    "ViewProfileBtnText": "View Profile",
+    "lawyersText": "Lawyers",
+    "managersText": "Managers",
+    "tonyWongTitle": "Founder & Managing Partner",
+    "benjaminHungTitle": "Counsel",
+    "patriciaRayTitle": "Senior Legal Counsel",
+    "douglasIngrahamTitle": "Senior Legal Counsel",
+    "linziTseTitle": "Legal Compliance Officer, Solicitor (Hong Kong)",
+    "anabelZhuTitle": "Office Manager",
+    "manlinYuTitle": "Assistant Case Manager",
+    "amyLiuTitle": "Case Processing Manager",
+    "lillyJiaTitle": "Case Processing Manager",
+    "terryYipTitle": "Chief Representative for China"
   }
 }
