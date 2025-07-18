@@ -1,6 +1,8 @@
+'use client';
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import TeamMemberCard from '@/components/TeamMemberCard';
+import { motion } from 'framer-motion';
 
 interface Member {
   name: string;
@@ -8,6 +10,20 @@ interface Member {
   image: string;
   slug: string;
 }
+
+const gridVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 const MeetOurTeam = () => {
   const t = useTranslations('MeetOurTeam');
@@ -92,34 +108,48 @@ const MeetOurTeam = () => {
 
       <section className="mb-16">
         <h2 className="text-2xl font-bold text-orange-500 mb-6">{t('lawyersText')}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          variants={gridVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {lawyers.map((lawyer) => (
-            <TeamMemberCard
-              key={lawyer.slug}
-              name={lawyer.name}
-              title={lawyer.title}
-              image={lawyer.image}
-              slug={lawyer.slug}
-              viewProfileBtnText={t('ViewProfileBtnText')}
-            />
+            <motion.div key={lawyer.slug} variants={cardVariants}>
+              <TeamMemberCard
+                name={lawyer.name}
+                title={lawyer.title}
+                image={lawyer.image}
+                slug={lawyer.slug}
+                viewProfileBtnText={t('ViewProfileBtnText')}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
       <section>
         <h2 className="text-2xl font-bold text-orange-500 mb-6">{t('managersText')}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          variants={gridVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {managers.map((manager) => (
-            <TeamMemberCard
-              key={manager.slug}
-              name={manager.name}
-              title={manager.title}
-              image={manager.image}
-              slug={manager.slug}
-              viewProfileBtnText={t('ViewProfileBtnText')}
-            />
+            <motion.div key={manager.slug} variants={cardVariants}>
+              <TeamMemberCard
+                name={manager.name}
+                title={manager.title}
+                image={manager.image}
+                slug={manager.slug}
+                viewProfileBtnText={t('ViewProfileBtnText')}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
     </div>
   );
