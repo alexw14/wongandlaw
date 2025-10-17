@@ -1,3 +1,5 @@
+'use client'
+import * as React from 'react';
 import ProfileNotFound from '@/components/ProfileNotFound';
 import { lawyers, managers } from '@/data/team-members';
 import { FaBookOpen, FaGraduationCap, FaGavel, FaGlobe } from 'react-icons/fa';
@@ -65,11 +67,7 @@ const memberDetails: Record<string, {
   // Add more members as needed...
 };
 
-const ProfessionalProfilePage = async ({
-  params,
-}: {
-  params: { member: string };
-}) => {
+const ProfessionalProfilePage = async ({ params }: { params: Promise<{ member: string }> }) => {
   const { member } = await params;
   const foundMember = [...lawyers, ...managers].find((m) => m.slug === member);
 
