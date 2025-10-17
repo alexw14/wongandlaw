@@ -204,5 +204,10 @@
     "amyLiuTitle": "案件處理經理",
     "lillyJiaTitle": "案件處理經理",
     "terryYipTitle": "中國區首席代表"
+  },
+  "ProfileNotFound": {
+    "title": "找不到個人簡介",
+    "content": "抱歉，您查找的團隊成員不存在或個人簡介連結不正確。",
+    "btnText": "返回我們的團隊"
   }
 }

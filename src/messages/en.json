@@ -204,5 +204,10 @@
     "amyLiuTitle": "Case Processing Manager",
     "lillyJiaTitle": "Case Processing Manager",
     "terryYipTitle": "Chief Representative for China"
+  },
+  "ProfileNotFound": {
+    "title": "Profile Not Found",
+    "content": "Sorry, the team member you are looking for does not exist or the profile link is incorrect.",
+    "btnText": "Back to Our Team"
   }
 }

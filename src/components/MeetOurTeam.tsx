@@ -3,13 +3,7 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 import TeamMemberCard from '@/components/TeamMemberCard';
 import { motion } from 'framer-motion';
-
-interface Member {
-  name: string;
-  title: string;
-  image: string;
-  slug: string;
-}
+import { lawyers, managers } from '@/data/team-members';
 
 const gridVariants = {
   hidden: {},
@@ -28,72 +22,6 @@ const cardVariants = {
 const MeetOurTeam = () => {
   const t = useTranslations('MeetOurTeam');
 
-  const lawyers: Member[] = [
-    {
-      name: 'Tony Wong',
-      title: t('tonyWongTitle'),
-      image: '/images/professionals/tonywong_profile.jpg',
-      slug: 'tony-wong',
-    },
-    {
-      name: 'Benjamin Hung',
-      title: t('benjaminHungTitle'),
-      image: '/images/professionals/benjaminhung_profile.jpg',
-      slug: 'benjamin-hung',
-    },
-    {
-      name: 'Patricia L. Ray',
-      title: t('patriciaRayTitle'),
-      image: '/images/professionals/patriciaray_profile.png',
-      slug: 'patricia-ray',
-    },
-    {
-      name: 'Douglas Ingraham',
-      title: t('douglasIngrahamTitle'),
-      image: '/images/professionals/douglasingraham_profile.png',
-      slug: 'douglas-ingram',
-    },
-    {
-      name: 'Linzi Tse',
-      title: t('linziTseTitle'),
-      image: '/images/professionals/linzitse_profile.jpg',
-      slug: 'linzi-tse',
-    },
-  ];
-
-  const managers: Member[] = [
-    {
-      name: 'Anabel Zhu',
-      title: t('anabelZhuTitle'),
-      image: '/images/professionals/anabelzhu_profile.jpg',
-      slug: 'anabel-zhu',
-    },
-    {
-      name: 'Man-Lin Yu',
-      title: t('manlinYuTitle'),
-      image: '/images/professionals/manlinyu_profile.jpg',
-      slug: 'manlin-yu',
-    },
-    {
-      name: 'Amy Liu',
-      title: t('amyLiuTitle'),
-      image: '/images/professionals/amyliu_profile.png',
-      slug: 'amy-liu',
-    },
-    {
-      name: 'Lilly Jia',
-      title: t('lillyJiaTitle'),
-      image: '/images/professionals/lillyjia_profile.jpg',
-      slug: 'lilly-jia',
-    },
-    {
-      name: 'Terry Yip',
-      title: t('terryYipTitle'),
-      image: '/images/professionals/terryyip_profile.jpg',
-      slug: 'terry-yip',
-    },
-  ];
-
   return (
     <div className="max-w-5xl mx-auto px-4 py-16 mb-16">
       <section className="mb-12">
@@ -107,7 +35,9 @@ const MeetOurTeam = () => {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-orange-500 mb-6">{t('lawyersText')}</h2>
+        <h2 className="text-2xl font-bold text-orange-500 mb-6">
+          {t('lawyersText')}
+        </h2>
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
           variants={gridVariants}
@@ -119,7 +49,7 @@ const MeetOurTeam = () => {
             <motion.div key={lawyer.slug} variants={cardVariants}>
               <TeamMemberCard
                 name={lawyer.name}
-                title={lawyer.title}
+                title={t(lawyer.titleKey)}
                 image={lawyer.image}
                 slug={lawyer.slug}
                 viewProfileBtnText={t('ViewProfileBtnText')}
@@ -130,7 +60,9 @@ const MeetOurTeam = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-bold text-orange-500 mb-6">{t('managersText')}</h2>
+        <h2 className="text-2xl font-bold text-orange-500 mb-6">
+          {t('managersText')}
+        </h2>
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
           variants={gridVariants}
@@ -142,7 +74,7 @@ const MeetOurTeam = () => {
             <motion.div key={manager.slug} variants={cardVariants}>
               <TeamMemberCard
                 name={manager.name}
-                title={manager.title}
+                title={t(manager.titleKey)}
                 image={manager.image}
                 slug={manager.slug}
                 viewProfileBtnText={t('ViewProfileBtnText')}
