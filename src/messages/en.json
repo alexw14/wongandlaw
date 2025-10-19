@@ -209,5 +209,31 @@
     "title": "Profile Not Found",
     "content": "Sorry, the team member you are looking for does not exist or the profile link is incorrect.",
     "btnText": "Back to Our Team"
+  },
+  "BusinessEntitiesCorporateGovernance": {
+    "title": "Business Entities & Corporate Governance",
+    "subTitle": "The right business entity sets the foundation for your company's success, impacting everything from daily operations to liability and growth.",
+    "overviewTitle": "Overview",
+    "overviewText": "Selecting the right business entity and structure is a critical first step for any startup or growing business. Your choice will impact relationships among partners, daily operations, taxation, capital raising, asset protection, and legal liability. Each entity type, such as sole proprietorship, partnership, corporation (C Corp or S Corp), limited liability company (LLC), joint venture, or nonprofit, offers distinct advantages and considerations. The optimal structure depends on factors like your business’s nature, risk profile, capital needs, ownership, financial goals, and liability concerns. Our experienced legal team will help you navigate these options and choose the most suitable entity to support your business objectives and long-term success.",
+    "aboutHeaderText": "",
+    "aboutText": "",
+    "entitySelectionTitle": "Strategic Guidance on Entity Selection and Jurisdiction",
+    "entitySelectionDescription": "Receive expert advice on choosing the most suitable business entity and jurisdiction—whether domestic, foreign, or offshore—to align with your operational and legal objectives.",
+    "registrationTitle": "Comprehensive Business Entity Registration",
+    "registrationDescription": "Benefit from end-to-end support in registering your business entity, ensuring compliance with all regulatory requirements and a smooth setup process.",
+    "agreementDraftingTitle": "Customized Partnership and Joint Venture Agreements",
+    "agreementDraftingDescription": "Protect your interests with professionally drafted partnership and joint venture agreements tailored to your business goals and relationships.",
+    "governanceSupportTitle": "Ongoing Corporate Governance and Compliance Support",
+    "governanceSupportDescription": "Maintain your company’s good standing with ongoing guidance on corporate governance, regulatory compliance, and best practices for managing legal obligations.",
+    "FAQTitle": "Frequently Asked Questions",
+    "question1": "What factors should I consider when choosing a business entity for my company?",
+    "answer1": "When selecting a business entity, consider your company’s risk profile, tax implications, ownership structure, capital needs, liability concerns, and long-term business goals. Each entity type offers different advantages and legal protections.",
+    "question2": "How long does it take to register a new business entity, and what documents are required?",
+    "answer2": "The registration timeline varies by jurisdiction and entity type, but most businesses can be registered within a few days to several weeks. Commonly required documents include articles of incorporation or organization, partnership agreements, and identification for owners or partners.",
+    "question3": "What are the ongoing compliance requirements for corporations and LLCs?",
+    "answer3": "Corporations and LLCs must maintain good standing by filing annual reports, holding regular meetings, keeping accurate records, and complying with tax and regulatory obligations. Our legal team can help you stay compliant and avoid penalties.",
+    "contactUsTitle": "Get in Touch with Our Business Law Team",
+    "contactUsContent": "Have questions about business entities, corporate governance, or need legal guidance for your company? Our experienced attorneys are ready to assist you. Contact us today to schedule a consultation or learn more about our services.",
+    "contactUsButtonText": "Request a Consultation"
   }
 }
