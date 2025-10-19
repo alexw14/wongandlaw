@@ -1,4 +1,3 @@
-'use client'
 import * as React from 'react';
 import ProfileNotFound from '@/components/ProfileNotFound';
 import { lawyers, managers } from '@/data/team-members';
