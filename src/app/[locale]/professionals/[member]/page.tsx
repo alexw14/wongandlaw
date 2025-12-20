@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Image from 'next/image';
 import ProfileNotFound from '@/components/ProfileNotFound';
 import { lawyers, managers } from '@/data/team-members';
 import { FaBookOpen, FaGraduationCap, FaGavel, FaGlobe } from 'react-icons/fa';
@@ -80,10 +81,14 @@ const ProfessionalProfilePage = async ({ params }: { params: Promise<{ member: s
     <div className="max-w-5xl mx-auto py-16 px-4 mb-16">
       {/* Top section: Large photo and bio */}
       <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-12">
-        <img
+        <Image 
           src={foundMember.image}
           alt={foundMember.name}
-          className="w-64 h-64 rounded-2xl object-cover object-top border-4 border-orange-500 shadow-lg"
+          width={250}
+          height={250}
+          quality={100}
+          className='w-64 h-64 rounded-2xl object-cover object-top border-4 border-orange-500 shadow-lg'
+          unoptimized
         />
         <div className="flex-1">
           <h1 className="text-4xl font-extrabold mb-2 text-orange-500">{foundMember.name}</h1>
