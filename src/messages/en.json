@@ -235,5 +235,13 @@
     "contactUsTitle": "Get in Touch with Our Business Law Team",
     "contactUsContent": "Have questions about business entities, corporate governance, or need legal guidance for your company? Our experienced attorneys are ready to assist you. Contact us today to schedule a consultation or learn more about our services.",
     "contactUsButtonText": "Request a Consultation"
+  },
+  "BusinessTransactions": {
+    "title": "Business Transactions",
+    "subTitle": "business transactions subtitle",
+    "overviewTitle": "Overview",
+    "overviewText": "Overview Text",
+    "aboutHeaderText": "",
+    "aboutText": ""
   }
 }
