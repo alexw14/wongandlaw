@@ -31,7 +31,7 @@ const Footer = () => {
           <ul className="space-y-1 text-sm">
             <li className="flex items-center gap-2">
               <FaMapMarkerAlt className="inline text-orange-500" size={20} />
-              <span>
+              <span className="text-left">
                 1360 Valley Vista Drive, Suite 136
                 <br />
                 Diamond Bar, CA 91765
@@ -40,13 +40,13 @@ const Footer = () => {
             <li className="flex items-center gap-2">
               <FaPhone className="inline text-orange-500" size={20} />
               <a href="tel:6264477788" className="hover:text-orange-500">
-                626-447-7788
+                (626) 447-7788
               </a>
             </li>
             <li className="flex items-center gap-2">
               <FaFax className="inline text-orange-500" size={20} />
               <a href="fax:6264477783" className="hover:text-orange-500">
-                626-447-7783
+                (626) 447-7783
               </a>
             </li>
             <li className="flex items-center gap-2">
