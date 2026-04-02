@@ -66,8 +66,9 @@ const BusinessEntitiesCorporateGovernancePage = () => {
     <div className="max-w-5xl mx-auto px-4 py-12">
       <PracticeAreaHeader {...headerData} />
       <PracticeAreaOverview {...overviewData} />
-      {renderBenefitCard()}
-      <br></br>
+      <section className="mb-10">
+        {renderBenefitCard()}
+      </section>
       <FrequentlyAskedQuestions {...frequentlyAskedQuestions} />
       <PracticeAreaContactUs {...contactUsData} />
     </div>
