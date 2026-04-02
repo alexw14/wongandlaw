@@ -6,7 +6,7 @@ import ServicesAccordion from '@/components/ServicesAccordion';
 import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';
 import PracticeAreaContactUs from '@/components/PracticeAreaContactUs';
 
-const businessTransactionsPage = () => {
+const BusinessTransactionsPage = () => {
   const t = useTranslations('BusinessTransactions');
 
   const headerData = {
@@ -75,4 +75,4 @@ const businessTransactionsPage = () => {
   );
 };
 
-export default businessTransactionsPage;
+export default BusinessTransactionsPage;
