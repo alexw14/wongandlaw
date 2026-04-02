@@ -86,7 +86,7 @@ const ServicesAccordion: React.FC<ServicesAccordionProps> = ({
                     {/* Description */}
                     <div>
                       <h4 className="font-semibold text-orange-500 mb-1">
-                        What It Includes
+                        How We Help
                       </h4>
                       <p className="text-gray-700 text-sm leading-relaxed">
                         {service.description}
