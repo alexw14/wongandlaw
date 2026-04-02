@@ -297,5 +297,41 @@
     "contactUsTitle": "Get in Touch with Our Business Law Team",
     "contactUsContent": "Have questions about business entities, corporate governance, or need legal guidance for your company? Our experienced attorneys are ready to assist you. Contact us today to schedule a consultation or learn more about our services.",
     "contactUsButtonText": "Request a Consultation"
+  },
+  "ECommerceIntellectualProperty": {
+    "title": "E-Commerce & Intellectual Property",
+    "subTitle": "E-Commerce & Intellectual Property Sub Title",
+    "overviewTitle": "Overview",
+    "overviewText": "overview text",
+    "aboutHeaderText": "about header text",
+    "aboutText": "about text",
+    "FAQTitle": "Frequently Asked Questions",
+    "question1": "q1?",
+    "answer1": "a1",
+    "question2": "q2",
+    "answer2": "a2",
+    "question3": "q3",
+    "answer3": "a3",
+    "contactUsTitle": "Get in Touch with Our Business Law Team",
+    "contactUsContent": "Have questions about business entities, corporate governance, or need legal guidance for your company? Our experienced attorneys are ready to assist you. Contact us today to schedule a consultation or learn more about our services.",
+    "contactUsButtonText": "Request a Consultation"
+  },
+    "AssetsProtectionEstatePlanning": {
+    "title": "Assets Protection & Estate Planning",
+    "subTitle": "Assets Protection & Estate Planning Sub Title",
+    "overviewTitle": "Overview",
+    "overviewText": "overview text",
+    "aboutHeaderText": "about header text",
+    "aboutText": "about text",
+    "FAQTitle": "Frequently Asked Questions",
+    "question1": "q1?",
+    "answer1": "a1",
+    "question2": "q2",
+    "answer2": "a2",
+    "question3": "q3",
+    "answer3": "a3",
+    "contactUsTitle": "Get in Touch with Our Business Law Team",
+    "contactUsContent": "Have questions about business entities, corporate governance, or need legal guidance for your company? Our experienced attorneys are ready to assist you. Contact us today to schedule a consultation or learn more about our services.",
+    "contactUsButtonText": "Request a Consultation"
   }
 }
