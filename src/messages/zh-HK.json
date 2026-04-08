@@ -235,5 +235,39 @@
     "contactUsTitle": "聯絡我們的商業法律團隊",
     "contactUsContent": "如您對商業實體、企業管治有任何疑問，或需就貴公司的事務尋求法律指導，我們經驗豐富的律師團隊隨時準備為您提供協助。請即與我們聯絡，安排諮詢或了解更多服務內容。",
     "contactUsButtonText": "預約諮詢"
+  },
+  "tony-wong-info" : {
+    "bio": "Having been admitted by the State Bar of California in 2006, Tony Wong has been practicing law in the U.S. In 2008, Tony founded Wong & Associates, Lawyers. Tony is also admitted in Hong Kong, England and Wales. With his legal knowledge and experience in different jurisdictions, Mr. Wong, together with his associates and legal teammates, provide affordable and competent legal services for clients from the U.S. and Asian countries to resolve complex legal issues in immigration, business transactions, corporate governance, asset protection, intellectual property, and civil litigation. Tony has been recognized for Excellence in Immigration Law by Lawyers of Distinction®. He is also a member of AILA’s Global Immigration Chapter and Asia-Pacific Chapter, and an EB5-verified professional by EB-5 Investors.",
+    "areas": [
+      "Immigration (especially investment-related immigration)",
+      "Corporation",
+      "Business transactions",
+      "Asset protection & estate planning",
+      "Intellectual property",
+      "Licensing and transfer of I.P. assets",
+      "E-commerce"
+    ],
+    "education": [
+      "香港大學法學學士（榮譽）",
+      "香港城市大學法學碩士",
+      "西南法學院法學碩士",
+      "西洛杉磯大學法學院法律博士"
+    ],
+    "admissions": [
+      "The State Bar of California – Attorney at Law",
+      "The Law Society of Hong Kong – Solicitor",
+      "The Law Society of England & Wales – Solicitor",
+      "Central District of California U.S. District Court",
+      "Federal Court of Appeal",
+      "U.S. Immigration Court"
+    ],
+    "languages": [
+      "English",
+      "Chinese (Cantonese and Mandarin)"
+    ],
+    "areasOfPracticeTitle": "執業領域",
+    "educationTitle": "教育背景",
+    "admissionsTitle": "執業資格",
+    "languagesTitle": "語言能力"
   }
 }

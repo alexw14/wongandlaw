@@ -316,7 +316,7 @@
     "contactUsContent": "Have questions about business entities, corporate governance, or need legal guidance for your company? Our experienced attorneys are ready to assist you. Contact us today to schedule a consultation or learn more about our services.",
     "contactUsButtonText": "Request a Consultation"
   },
-    "AssetsProtectionEstatePlanning": {
+  "AssetsProtectionEstatePlanning": {
     "title": "Assets Protection & Estate Planning",
     "subTitle": "Assets Protection & Estate Planning Sub Title",
     "overviewTitle": "Overview",
@@ -333,5 +333,39 @@
     "contactUsTitle": "Get in Touch with Our Business Law Team",
     "contactUsContent": "Have questions about business entities, corporate governance, or need legal guidance for your company? Our experienced attorneys are ready to assist you. Contact us today to schedule a consultation or learn more about our services.",
     "contactUsButtonText": "Request a Consultation"
+  },
+  "tony-wong-info" : {
+    "bio": "Having been admitted by the State Bar of California in 2006, Tony Wong has been practicing law in the U.S. In 2008, Tony founded Wong & Associates, Lawyers. Tony is also admitted in Hong Kong, England and Wales. With his legal knowledge and experience in different jurisdictions, Mr. Wong, together with his associates and legal teammates, provide affordable and competent legal services for clients from the U.S. and Asian countries to resolve complex legal issues in immigration, business transactions, corporate governance, asset protection, intellectual property, and civil litigation. Tony has been recognized for Excellence in Immigration Law by Lawyers of Distinction®. He is also a member of AILA’s Global Immigration Chapter and Asia-Pacific Chapter, and an EB5-verified professional by EB-5 Investors.",
+    "areas": [
+      "Immigration (especially investment-related immigration)",
+      "Corporation",
+      "Business transactions",
+      "Asset protection & estate planning",
+      "Intellectual property",
+      "Licensing and transfer of I.P. assets",
+      "E-commerce"
+    ],
+    "education": [
+      "LL.B. (Hon.) – University of Hong Kong",
+      "LLM – City University of Hong Kong",
+      "LLM – Southwestern Law School",
+      "J.D. – University of West Los Angeles, School of Law"
+    ],
+    "admissions": [
+      "The State Bar of California – Attorney at Law",
+      "The Law Society of Hong Kong – Solicitor",
+      "The Law Society of England & Wales – Solicitor",
+      "Central District of California U.S. District Court",
+      "Federal Court of Appeal",
+      "U.S. Immigration Court"
+    ],
+    "languages": [
+      "English",
+      "Chinese (Cantonese and Mandarin)"
+    ],
+    "areasOfPracticeTitle": "Areas of Practice",
+    "educationTitle": "Education",
+    "admissionsTitle": "Admissions",
+    "languagesTitle": "Languages"
   }
 }
