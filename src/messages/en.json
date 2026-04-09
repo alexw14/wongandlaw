@@ -203,7 +203,12 @@
     "manlinYuTitle": "Assistant Case Manager",
     "amyLiuTitle": "Case Processing Manager",
     "lillyJiaTitle": "Case Processing Manager",
-    "terryYipTitle": "Chief Representative for China"
+    "terryYipTitle": "Chief Representative for China",
+    "areasOfPracticeTitle": "Areas of Practice",
+    "educationTitle": "Education",
+    "admissionsTitle": "Admissions",
+    "languagesTitle": "Languages",
+    "professionalExperiencesTitle": "Professional Experiences"
   },
   "ProfileNotFound": {
     "title": "Profile Not Found",
@@ -335,7 +340,7 @@
     "contactUsButtonText": "Request a Consultation"
   },
   "tony-wong-info" : {
-    "bio": "Having been admitted by the State Bar of California in 2006, Tony Wong has been practicing law in the U.S. In 2008, Tony founded Wong & Associates, Lawyers. Tony is also admitted in Hong Kong, England and Wales. With his legal knowledge and experience in different jurisdictions, Mr. Wong, together with his associates and legal teammates, provide affordable and competent legal services for clients from the U.S. and Asian countries to resolve complex legal issues in immigration, business transactions, corporate governance, asset protection, intellectual property, and civil litigation. Tony has been recognized for Excellence in Immigration Law by Lawyers of Distinction®. He is also a member of AILA’s Global Immigration Chapter and Asia-Pacific Chapter, and an EB5-verified professional by EB-5 Investors.",
+    "bio": "Having been admitted by the State Bar of California in 2006, Tony Wong has been practicing law in the U.S. In 2008, Tony founded Wong & Associates, Lawyers. Tony is also admitted in Hong Kong, England and Wales. With his legal knowledge and experience in different jurisdictions, Mr. Wong, together with his associates and legal teammates, provide affordable and competent legal services for clients from the U.S. and Asian countries to resolve complex legal issues in immigration, business transactions, corporate governance, asset protection, intellectual property, and civil litigation. Tony has been recognized for Excellence in Immigration Law by Lawyers of Distinction®. He is also a member of AILA's Global Immigration Chapter and Asia-Pacific Chapter, and an EB5-verified professional by EB-5 Investors.",
     "areas": [
       "Immigration (especially investment-related immigration)",
       "Corporation",
@@ -346,15 +351,15 @@
       "E-commerce"
     ],
     "education": [
-      "LL.B. (Hon.) – University of Hong Kong",
-      "LLM – City University of Hong Kong",
-      "LLM – Southwestern Law School",
-      "J.D. – University of West Los Angeles, School of Law"
+      "LL.B. (Hon.) - University of Hong Kong",
+      "LLM - City University of Hong Kong",
+      "LLM - Southwestern Law School",
+      "J.D. - University of West Los Angeles, School of Law"
     ],
     "admissions": [
-      "The State Bar of California – Attorney at Law",
-      "The Law Society of Hong Kong – Solicitor",
-      "The Law Society of England & Wales – Solicitor",
+      "The State Bar of California - Attorney at Law",
+      "The Law Society of Hong Kong - Solicitor",
+      "The Law Society of England & Wales - Solicitor",
       "Central District of California U.S. District Court",
       "Federal Court of Appeal",
       "U.S. Immigration Court"
@@ -362,10 +367,81 @@
     "languages": [
       "English",
       "Chinese (Cantonese and Mandarin)"
+    ]
+  },
+  "benjamin-hung-info": {
+    "bio": "Benjamin Hung has been practicing laws in the State of California for over thirteen years. Mr. Hung immigrated to the U.S. with his family from Hong Kong when he was 6 years old. He was educated in the U.S. and graduated from the University of West Los Angeles with a Juris Doctor degree. He was a former prosecutor of the City of Long Beach, California. Mr. Hung has ample experiences in real estate, business transaction, personal injury, civil litigation and criminal laws. Mr. Hung is the member of U.S. District Court, Central District of California and the Los Angeles County Bar Association. Having associated with Wong & Associates for many years, Mr. Hung has successfully assisted the clients in resolving their complex legal issues.",
+    "areas": [
+      "Real estate law",
+      "Personal injury",
+      "Civil litigation",
+      "DUI",
+      "Will and trust",
+      "Intellectual property law",
+      "Bankruptcy"
     ],
-    "areasOfPracticeTitle": "Areas of Practice",
-    "educationTitle": "Education",
-    "admissionsTitle": "Admissions",
-    "languagesTitle": "Languages"
+    "education": [
+      "Bachelor of Science, California State University of Los Angeles",
+      "Juris Doctor, the University of Los Angeles, School of Law"
+    ],
+    "admissions": [
+      "Member of the State Bar of California",
+      "U.S. District Court, Central District of California",
+      "Member of the Los Angeles County Bar Association"
+    ],
+    "languages": [
+      "English",
+      "Chinese (Cantonese)"
+    ]
+  },
+  "patricia-ray-info": {
+    "bio": "Patricia L. Ray is a practicing attorney licensed in Pennsylvania and New York, and also a patent attorney registered with the U.S. Patent and Trademark Office. Patricia graduated from the Carnegie Mellon University with a major in Mechanical Engineering, the University Pittsburgh with a major in Economics, the Duquesne University with a Juris Doctor degree, and the University of Singapore with a master's degree in laws. Patricia has extensive and deep experience in intellectual property. She was the former senior counsel of Texas Instruments and worked at the U.S. Patent and Trademark Office as a patent examiner. She was also the General Counsel of the International Trade Litigator, Unfair Imports and Office at the U.S. International Trade Commission. At Wong & Associates, Patricia provides her legal advice to our attorneys in the matters of intellectual property and international business disputes.",
+    "areas": [
+      "Intellectual property litigation",
+      "Patent prosecution",
+      "Trademark & copyright application",
+      "Licensing & assignment of technology",
+      "Intellectual property"
+    ],
+    "education": [
+      "Carnegie Mellon University, Mechanical Engineering, B.S.",
+      "University of Pittsburgh, Economics, M.A.",
+      "Duquesne University, Juris Doctor",
+      "The University of Singapore, LL.M."
+    ],
+    "professional-experiences": [
+      "U.S. Office of Patents and Trademarks, Patent Examiner (1981-1982)",
+      "U.S. International Trade Commission, International Trade Litigator, Unfair Imports and Office of General Counsel (1982-1986)",
+      "U.S. Court of Appeals for the Federal Circuit, Washington D.C., Appellate Law Clerk (1986-1988)",
+      "Texas Instruments, Dallas, TX, Senior Counsel (1990-1999)"
+    ]
+  },
+  "douglas-ingraham-info": {
+    "bio": "Mr. Dougals Ingraham is a seasoned California-licensed attorney renowned for his expertise in diverse legal realms. With an extensive career spanning years, Mr. Ingraham has established himself as a formidable advocate for justice and a trusted advisor for his clients. Specializing in civil rights issues, immigration law, personal injury cases, and employment disputes, Mr. Ingraham brings a wealth of experience to each case he handles. His commitment to safeguarding the rights of individuals has been a driving force behind his successful representation in various legal matters. In the realm of immigration law, Mr. Ingraham possesses a profound understanding of the complexities and nuances inherent in this field. His decades-long dedication to this area of law has resulted in numerous landmark victories for his clients. Notably, his expertise has been acknowledged by the legal community and highlighted in the outcomes of cases that have set precedence within the 9th Circuit Court. Beyond his remarkable achievements in immigration law, Mr. Ingraham has made significant strides in addressing civil rights violations and cases of personal injury. His unwavering dedication to advocating for justice and fairness has earned him a reputation as a relentless defender of the rights of those who have been wronged. Mr. Dougals Ingraham’s commitment to the legal profession extends beyond his casework. He is a passionate advocate for change and a staunch supporter of the communities he serves. His approachable demeanor, coupled with his legal expertise, has made him a go-to attorney for clients seeking compassionate yet formidable representation. Mr. Ingraham takes pride in his ability to navigate complex legal landscapes while providing personalized attention to each client. His unwavering commitment to achieving favorable outcomes for those he represents reflects his deep-rooted passion for the law and dedication to making a difference in people's lives."
+  },
+  "linzi-tse-info": {
+    "bio": "Linzi Tse is a practicing solicitor of Hong Kong. Linzi graduated from the University of Reading with a bachelor's degree in Finance and Investment Banking, from the University of London with a master's degree in International and Comparative Law, from the City University of Hong Kong with a Juris Doctor degree, and from the University of Southern California, Gould School of Law with a master's degree in laws. Linzi has years of experience in compliance and has many years of legal practice in the areas of commercial, international transactions, and civil litigation. With her strong legal background and proficiency in English and Chinese (Cantonese and Mandarin), Linzi is currently working at Wong & Associates, Lawyers, performing compliance work on our investor clients' portfolios, particularly in the lawful source of funds for EB-5, E-2, or EB-1C petitions.",
+    "education": [
+      "Master of Laws, University of Southern California Gould School of Law",
+      "Postgraduate Certificate in Laws, City University of Hong Kong",
+      "Juris Doctor, City University of Hong Kong",
+      "Master in International and Comparative Commercial Law, University of London, School of Oriental and African Studies",
+      "Bachelor in Finance and Investment Banking, University of Reading"
+    ]
+  },
+  "anabel-zhu-info": {
+    "bio": "Anabel Zhu graduated from the East China University of Science and Technology with a bachelor's degree in Logistics Management. Anabel has been working in legal field for over 12 years and has much experience in dealing with family-based and employment-based immigration petitions. Anabel joined Wong & Associates in 2012 and has been managing thousands of immigration cases. At Wong & Associates, Anabel is supervising the overall operations of the firm and monitoring the status of the immigration cases."
+  },
+  "manlin-yu-info": {
+    "bio": "Man-lin Yu graduated from the University of California, Los Angeles with a bachelor's degree in Art and Philosophy and a paralegal program certificate. Man-lin has many years' experiences in legal field, especially in the areas of business and immigration. With her legal experience, strong analytical skills and proficiency in English and Chinese (Mandarin and Taiwanese), Man-lin can competently resolve the clients' issues and complete their immigration applications. At Wong & Associates, Lawyers, Man-lin is managing hundreds of immigration cases in terms of compliance, filings and follow-ups."
+  },
+  "amy-liu-info": {
+    "bio": "Amy Liu has been working in the U.S. immigration industry since 2011, primarily handling the clients' lawful source of funds and preparing and organizing the documentation for the immigration attorneys to file the clients' petitions. Amy's professional and practical experiences in EB-5 has helped hundreds of EB-5 investors achieve their American dreams. At Wong & Associates, despite living in China, Amy can directly interact with the clients to resolve the issues about their lawful source of funds with her thorough understanding of the Chinese culture, practices and dialects, as well as she can fully work with the firm's team members in the U.S. to accomplish the clients' petitions in timely manner."
+  },
+  "lilly-jia-info": {
+    "bio": "Lilly Jia graduated from the Nanjing College for Population Program Management with a bachelor's degree in Business English and achieved the 8th professional level of English. Lilly is very patient, detailed and customer oriented. She has abundantly practical experience in promoting the U.S. and Canada investment immigration in the People's Republic of China. She has worked in the immigration industry for over 10 years, and she was a project manager in charge of the U.S. E2, EB-1C and L-1, EB5 projects and the Canada investment and entrepreneur immigration projects, responsible for case preparation and processing. With her experience in the immigration and full understanding of the Chinese culture, Lilly is responsible for preparing lawful source of funds and documentation for our clients in China."
+  },
+  "terry-yip-info": {
+    "bio": "As a first-generation immigrant, Terry not only has a deep understanding of Chinese culture but has also personally experienced and extensively studied the complexities of the U.S. immigration system. This gives him unique insights into the challenges faced by immigrant communities. As the Chief Representative for China at Wong & Associates, Lawyers, Terry is responsible for maintaining close communication and collaboration with clients, bar associations, law firms, law schools, and other professionals in China. He plays a key role in fostering strong government relations, client relationships, and partnerships, ensuring the firm's business expansion and service quality in China meet the highest standards. Additionally, he is committed to promoting exchanges and cooperation between the U.S. and China in the legal field, facilitating deeper integration in legal practice and academic research. Terry graduated from Loyola Law School in Los Angeles, California, and holds a certificate in Immigration Law from Cornell University. With over 15 years of professional experience in EB-5 and other immigration cases, Terry excels at resolving complex immigration issues. His extensive background in immigration case preparation, legal research, investigation, and due diligence, combined with his deep cultural understanding, enhances his ability to serve clients effectively. In client relationship management, he demonstrates exceptional leadership, ensuring clear communication and providing personalized guidance to help clients navigate the immigration process smoothly."
   }
 }

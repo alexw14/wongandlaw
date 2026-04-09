@@ -203,7 +203,11 @@
     "manlinYuTitle": "助理案件經理",
     "amyLiuTitle": "案件處理經理",
     "lillyJiaTitle": "案件處理經理",
-    "terryYipTitle": "中國區首席代表"
+    "terryYipTitle": "中國區首席代表",
+    "areasOfPracticeTitle": "執業領域",
+    "educationTitle": "教育背景",
+    "admissionsTitle": "執業資格",
+    "languagesTitle": "語言能力"
   },
   "ProfileNotFound": {
     "title": "找不到個人簡介",
@@ -299,15 +303,15 @@
     "contactUsButtonText": "預約諮詢"
   },
   "tony-wong-info" : {
-    "bio": "Having been admitted by the State Bar of California in 2006, Tony Wong has been practicing law in the U.S. In 2008, Tony founded Wong & Associates, Lawyers. Tony is also admitted in Hong Kong, England and Wales. With his legal knowledge and experience in different jurisdictions, Mr. Wong, together with his associates and legal teammates, provide affordable and competent legal services for clients from the U.S. and Asian countries to resolve complex legal issues in immigration, business transactions, corporate governance, asset protection, intellectual property, and civil litigation. Tony has been recognized for Excellence in Immigration Law by Lawyers of Distinction®. He is also a member of AILA’s Global Immigration Chapter and Asia-Pacific Chapter, and an EB5-verified professional by EB-5 Investors.",
+    "bio": "黄荣杰律師於2006年獲得加利福尼亞州律師執業資格后，於美國執業至今。 2008年，黄律師創立了金頌達律師事務所。黄律師同時也獲得香港、英格蘭和威爾斯的執業資格。憑藉他在不同領域積累的法律知識和經驗，黄律師與他的團隊為來自美國和亞洲的客戶提供高品質，高效率，且收費合理的法律服務、幫助他們解決移民、國內外商業交易、公司治理、資產保護、知識產權及民事訴訟等領域的複雜法律問題。黄律師曾被 Lawyers of Distinction® 頒發移民法卓越獎。他還是美國移民律師協會（AILA）全球移民分會和亞太分會的成員，並且是EB-5投資者的名單律師。",
     "areas": [
-      "Immigration (especially investment-related immigration)",
-      "Corporation",
-      "Business transactions",
-      "Asset protection & estate planning",
-      "Intellectual property",
-      "Licensing and transfer of I.P. assets",
-      "E-commerce"
+      "移民（尤其是與投資相關的移民）",
+      "公司法",
+      "商業交易",
+      "資產保護與遺產規劃",
+      "知識產權",
+      "知識產權資產的許可與轉讓",
+      "以及電子商務"
     ],
     "education": [
       "香港大學法學學士（榮譽）",
@@ -326,10 +330,6 @@
     "languages": [
       "English",
       "Chinese (Cantonese and Mandarin)"
-    ],
-    "areasOfPracticeTitle": "執業領域",
-    "educationTitle": "教育背景",
-    "admissionsTitle": "執業資格",
-    "languagesTitle": "語言能力"
+    ]
   }
 }
