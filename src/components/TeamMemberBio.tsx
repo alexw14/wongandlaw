@@ -9,16 +9,16 @@ interface TeamMember {
 }
 
 interface TeamMemberBioProps {
-	currentMember: TeamMember,
+	member: TeamMember,
 	bio: string
 }
 
-const TeamMemberBio: React.FC<TeamMemberBioProps> = ({ currentMember, bio }) => {
+const TeamMemberBio: React.FC<TeamMemberBioProps> = ({ member, bio }) => {
 	return (
 		<div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-12">
 			<Image
-				src={currentMember.image}
-				alt={currentMember.name}
+				src={member.image}
+				alt={member.name}
 				width={250}
 				height={250}
 				quality={100}
@@ -26,8 +26,8 @@ const TeamMemberBio: React.FC<TeamMemberBioProps> = ({ currentMember, bio }) => 
 				unoptimized
 			/>
 			<div className="flex-1">
-				<h1 className="text-4xl font-extrabold mb-2 text-orange-500">{currentMember.name}</h1>
-				<h2 className="text-lg text-gray-700 mb-4">{currentMember.titleKey}</h2>
+				<h1 className="text-4xl font-extrabold mb-2 text-orange-500">{member.name}</h1>
+				<h2 className="text-lg text-gray-700 mb-4">{member.titleKey}</h2>
 				<p className="text-gray-700 text-base leading-relaxed">{bio}</p>
 			</div>
 		</div>

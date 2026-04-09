@@ -4,7 +4,7 @@ import ProfileNotFound from '@/components/ProfileNotFound';
 import TeamMemberBio from '@/components/TeamMemberBio';
 import TeamMemberInfoCard from '@/components/TeamMemberInfoCard';
 import { lawyers, managers } from '@/data/team-members';
-import { FaBookOpen, FaGraduationCap, FaGavel, FaGlobe } from 'react-icons/fa';
+import { FaBookOpen, FaGraduationCap, FaGavel, FaGlobe, FaBriefcase } from 'react-icons/fa';
 
 const ProfessionalProfilePage = async ({
   params,
@@ -21,34 +21,45 @@ const ProfessionalProfilePage = async ({
   }
 
   const namespace = `${currentMember.slug}-info`;
-  const t = await getTranslations(namespace);
-  const bio = t('bio');
-  const areas = (t.raw('areas') as string[]) || [];
-  const education = (t.raw('education') as string[]) || [];
-  const admissions = (t.raw('admissions') as string[]) || [];
-  const languages = (t.raw('languages') as string[]) || [];
+  const memberT = await getTranslations(namespace);
+  const meetOurTeamT = await getTranslations('MeetOurTeam');
+
+  const memberData = { ...currentMember, titleKey: meetOurTeamT(currentMember.titleKey) };
+  
+  const bio = memberT('bio');
+  const areas = memberT.has('areas') ? memberT.raw('areas') as string[] : [];
+  const professionalExperiences = memberT.has('professional-experiences') ? memberT.raw('professional-experiences') as string[] : [];
+  const education = memberT.has('education') ? memberT.raw('education') as string[] : [];
+  const admissions = memberT.has('admissions') ? memberT.raw('admissions') as string[] : [];
+  const languages = memberT.has('languages') ? memberT.raw('languages') as string[] : [];
   const infoConfigs = [
     {
       key: 'areas',
-      title: t('areasOfPracticeTitle'),
+      title: meetOurTeamT('areasOfPracticeTitle'),
       items: areas,
       icon: FaBookOpen,
     },
     {
+      key: 'professional-experiences',
+      title: meetOurTeamT('professionalExperiencesTitle'),
+      items: professionalExperiences,
+      icon: FaBriefcase,
+    },
+    {
       key: 'education',
-      title: t('educationTitle'),
+      title: meetOurTeamT('educationTitle'),
       items: education,
       icon: FaGraduationCap,
     },
     {
       key: 'admissions',
-      title: t('admissionsTitle'),
+      title: meetOurTeamT('admissionsTitle'),
       items: admissions,
       icon: FaGavel,
     },
     {
       key: 'languages',
-      title: t('languagesTitle'),
+      title: meetOurTeamT('languagesTitle'),
       items: languages,
       icon: FaGlobe,
     },
@@ -58,7 +69,7 @@ const ProfessionalProfilePage = async ({
 
   return (
     <div className="max-w-5xl mx-auto py-16 px-4 mb-16">
-      <TeamMemberBio currentMember={currentMember} bio={bio} />
+      <TeamMemberBio member={memberData} bio={bio} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {memberInfo.map((info) => (
           <TeamMemberInfoCard
