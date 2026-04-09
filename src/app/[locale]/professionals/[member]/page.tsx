@@ -6,9 +6,15 @@ import TeamMemberInfoCard from '@/components/TeamMemberInfoCard';
 import { lawyers, managers } from '@/data/team-members';
 import { FaBookOpen, FaGraduationCap, FaGavel, FaGlobe } from 'react-icons/fa';
 
-const ProfessionalProfilePage = async ({ params }: { params: Promise<{ member: string }> }) => {
+const ProfessionalProfilePage = async ({
+  params,
+}: {
+  params: Promise<{ member: string }>;
+}) => {
   const { member } = await params;
-  const currentMember = [...lawyers, ...managers].find((m) => m.slug === member);
+  const currentMember = [...lawyers, ...managers].find(
+    (m) => m.slug === member,
+  );
 
   if (!currentMember) {
     return <ProfileNotFound />;
@@ -17,47 +23,38 @@ const ProfessionalProfilePage = async ({ params }: { params: Promise<{ member: s
   const namespace = `${currentMember.slug}-info`;
   const t = await getTranslations(namespace);
   const bio = t('bio');
-  const areas = t.raw('areas') as string[] || [];
-  const education = t.raw('education') as string[] || [];
-  const admissions = t.raw('admissions') as string[] || [];
-  const languages = t.raw('languages') as string[] || [];
-  const memberInfo = [];
-
-  if (areas.length > 0) {
-    memberInfo.push({
+  const areas = (t.raw('areas') as string[]) || [];
+  const education = (t.raw('education') as string[]) || [];
+  const admissions = (t.raw('admissions') as string[]) || [];
+  const languages = (t.raw('languages') as string[]) || [];
+  const infoConfigs = [
+    {
       key: 'areas',
       title: t('areasOfPracticeTitle'),
       items: areas,
-      icon: FaBookOpen
-    });
-  }
-
-  if (education.length > 0) {
-    memberInfo.push({
+      icon: FaBookOpen,
+    },
+    {
       key: 'education',
       title: t('educationTitle'),
       items: education,
-      icon: FaGraduationCap
-    });
-  }
-
-  if (admissions.length > 0) {
-    memberInfo.push({
+      icon: FaGraduationCap,
+    },
+    {
       key: 'admissions',
       title: t('admissionsTitle'),
       items: admissions,
-      icon: FaGavel
-    });
-  }
-
-  if (languages.length > 0) {
-    memberInfo.push({
+      icon: FaGavel,
+    },
+    {
       key: 'languages',
       title: t('languagesTitle'),
       items: languages,
-      icon: FaGlobe
-    });
-  }
+      icon: FaGlobe,
+    },
+  ];
+
+  const memberInfo = infoConfigs.filter((info) => info.items.length > 0);
 
   return (
     <div className="max-w-5xl mx-auto py-16 px-4 mb-16">
