@@ -1,9 +1,9 @@
-import ComingSoon from '@/components/ComingSoon';
+import LegalDisclaimer from '@/components/LegalDisclaimer';
 
 const LegalDisclaimerPage = () => {
   return (
     <div>
-      <ComingSoon />
+      <LegalDisclaimer />
     </div>
   );
 };
