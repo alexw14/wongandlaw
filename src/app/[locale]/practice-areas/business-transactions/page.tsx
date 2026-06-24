@@ -11,7 +11,7 @@ const BusinessTransactionsPage = () => {
 
   const headerData = {
     imgUrl: '/images/services/business-transactions.jpg',
-    imgAltText: 'business transactions',
+    imgAltText: t('imgAltText'),
     title: t('title'),
     subTitle: t('subTitle'),
   };
@@ -64,11 +64,21 @@ const BusinessTransactionsPage = () => {
     buttonText: t('contactUsButtonText'),
   };
 
+  const servicesAccordionLabels = {
+    howWeHelp: t('howWeHelpTitle'),
+    whyItMatters: t('whyItMattersTitle'),
+    whoNeedsIt: t('whoNeedsItTitle'),
+  };
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
       <PracticeAreaHeader {...headerData} />
       <PracticeAreaOverview {...overviewData} />
-      <ServicesAccordion title="Our Services" services={servicesData} />
+      <ServicesAccordion
+        title={t('servicesTitle')}
+        services={servicesData}
+        labels={servicesAccordionLabels}
+      />
       <FrequentlyAskedQuestions {...frequentlyAskedQuestions} />
       <PracticeAreaContactUs {...contactUsData} />
     </div>
