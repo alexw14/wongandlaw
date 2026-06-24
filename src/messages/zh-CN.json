@@ -322,6 +322,6 @@
     "formMessagePlaceholder": "请描述您的法律事宜或问题……",
     "formDisclaimer": "注意：提交此表格不会建立律师与客户关系。请勿包含机密信息。",
     "formSubmitButton": "发送消息",
-    "formSuccessMessage": "谢谢您！您的消息已发送，我们将尽快与您联系。"
+    "formSuccessMessage": "您的电子邮件客户端已打开。请发送电子邮件以联系我们。"
   }
 }

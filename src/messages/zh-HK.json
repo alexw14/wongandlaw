@@ -356,6 +356,6 @@
     "formMessagePlaceholder": "請描述您的法律事宜或問題……",
     "formDisclaimer": "注意：提交此表格不會建立律師與客戶關係。請勿包含機密資訊。",
     "formSubmitButton": "發送訊息",
-    "formSuccessMessage": "謝謝您！您的訊息已發送，我們將盡快與您聯絡。"
+    "formSuccessMessage": "您的電子郵件用戶端已開啟。請發送電子郵件以聯絡我們。"
   }
 }

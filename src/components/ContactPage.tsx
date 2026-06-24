@@ -94,9 +94,7 @@ const ContactPage: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <FaFax className="text-orange-500 shrink-0" size={18} />
-                <a href="fax:6264477783" className="hover:text-orange-500 transition-colors">
-                  (626) 447-7783
-                </a>
+                <span>(626) 447-7783</span>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-orange-500 shrink-0" size={18} />
