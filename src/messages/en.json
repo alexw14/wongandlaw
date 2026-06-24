@@ -339,7 +339,7 @@
     "contactUsContent": "Have questions about business entities, corporate governance, or need legal guidance for your company? Our experienced attorneys are ready to assist you. Contact us today to schedule a consultation or learn more about our services.",
     "contactUsButtonText": "Request a Consultation"
   },
-  "tony-wong-info" : {
+  "tony-wong-info": {
     "bio": "Having been admitted by the State Bar of California in 2006, Tony Wong has been practicing law in the U.S. In 2008, Tony founded Wong & Associates, Lawyers. Tony is also admitted in Hong Kong, England and Wales. With his legal knowledge and experience in different jurisdictions, Mr. Wong, together with his associates and legal teammates, provide affordable and competent legal services for clients from the U.S. and Asian countries to resolve complex legal issues in immigration, business transactions, corporate governance, asset protection, intellectual property, and civil litigation. Tony has been recognized for Excellence in Immigration Law by Lawyers of Distinction®. He is also a member of AILA's Global Immigration Chapter and Asia-Pacific Chapter, and an EB5-verified professional by EB-5 Investors.",
     "areas": [
       "Immigration (especially investment-related immigration)",
@@ -443,5 +443,31 @@
   },
   "terry-yip-info": {
     "bio": "As a first-generation immigrant, Terry not only has a deep understanding of Chinese culture but has also personally experienced and extensively studied the complexities of the U.S. immigration system. This gives him unique insights into the challenges faced by immigrant communities. As the Chief Representative for China at Wong & Associates, Lawyers, Terry is responsible for maintaining close communication and collaboration with clients, bar associations, law firms, law schools, and other professionals in China. He plays a key role in fostering strong government relations, client relationships, and partnerships, ensuring the firm's business expansion and service quality in China meet the highest standards. Additionally, he is committed to promoting exchanges and cooperation between the U.S. and China in the legal field, facilitating deeper integration in legal practice and academic research. Terry graduated from Loyola Law School in Los Angeles, California, and holds a certificate in Immigration Law from Cornell University. With over 15 years of professional experience in EB-5 and other immigration cases, Terry excels at resolving complex immigration issues. His extensive background in immigration case preparation, legal research, investigation, and due diligence, combined with his deep cultural understanding, enhances his ability to serve clients effectively. In client relationship management, he demonstrates exceptional leadership, ensuring clear communication and providing personalized guidance to help clients navigate the immigration process smoothly."
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "subtitle": "We are here to help. Reach out to our team for a consultation or with any questions about our legal services.",
+    "officeInfoTitle": "Our Office",
+    "losAngelesOffice": "Los Angeles Office",
+    "wechatLabel": "WeChat",
+    "officeHoursTitle": "Office Hours",
+    "officeHoursWeekdays": "Monday – Friday: 9:00 AM – 6:00 PM (PST)",
+    "officeHoursWeekends": "Saturday – Sunday: By appointment only",
+    "viewOnMap": "View on Google Maps",
+    "formTitle": "Send Us a Message",
+    "formNameLabel": "Full Name",
+    "formNamePlaceholder": "Your full name",
+    "formEmailLabel": "Email Address",
+    "formEmailPlaceholder": "your@email.com",
+    "formPhoneLabel": "Phone Number",
+    "formPhonePlaceholder": "(123) 456-7890",
+    "formSubjectLabel": "Subject",
+    "formSubjectPlaceholder": "How can we help you?",
+    "formSubjectDefault": "Inquiry from wongandlaw.com",
+    "formMessageLabel": "Message",
+    "formMessagePlaceholder": "Please describe your legal matter or question...",
+    "formDisclaimer": "Note: Submitting this form does not create an attorney-client relationship. Do not include confidential information.",
+    "formSubmitButton": "Send Message",
+    "formSuccessMessage": "Your email client has been opened with your message. Please send the email to reach us."
   }
 }

@@ -297,5 +297,31 @@
     "contactUsTitle": "准备好保障您的下一笔商业交易？",
     "contactUsContent": "请联系我们经验丰富的商业法律团队安排保密咨询。我们随时为您解答疑问，了解您的需求，并为您的下一笔交易或持续业务运营提供战略性法律指导。",
     "contactUsButtonText": "预约咨询"
+  },
+  "ContactPage": {
+    "title": "联系我们",
+    "subtitle": "我们随时为您提供帮助。请联系我们的团队预约咨询，或咨询我们的法律服务。",
+    "officeInfoTitle": "我们的办公室",
+    "losAngelesOffice": "洛杉矶办公室",
+    "wechatLabel": "微信",
+    "officeHoursTitle": "办公时间",
+    "officeHoursWeekdays": "周一至周五：上午 9:00 – 下午 6:00（太平洋时间）",
+    "officeHoursWeekends": "周六至周日：仅限预约",
+    "viewOnMap": "在 Google 地图上查看",
+    "formTitle": "发送消息",
+    "formNameLabel": "姓名",
+    "formNamePlaceholder": "您的全名",
+    "formEmailLabel": "电子邮件地址",
+    "formEmailPlaceholder": "your@email.com",
+    "formPhoneLabel": "电话号码",
+    "formPhonePlaceholder": "(123) 456-7890",
+    "formSubjectLabel": "主题",
+    "formSubjectPlaceholder": "我们可以如何帮助您？",
+    "formSubjectDefault": "来自 wongandlaw.com 的咨询",
+    "formMessageLabel": "消息内容",
+    "formMessagePlaceholder": "请描述您的法律事宜或问题……",
+    "formDisclaimer": "注意：提交此表格不会建立律师与客户关系。请勿包含机密信息。",
+    "formSubmitButton": "发送消息",
+    "formSuccessMessage": "您的电子邮件客户端已打开。请发送电子邮件以联系我们。"
   }
 }
