@@ -1,9 +1,9 @@
-import ComingSoon from '@/components/ComingSoon';
+import TermsAndPrivacy from '@/components/TermsAndPrivacy';
 
 const TermsPage = () => {
   return (
     <div>
-      <ComingSoon />
+      <TermsAndPrivacy />
     </div>
   );
 };
