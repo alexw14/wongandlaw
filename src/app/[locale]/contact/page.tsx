@@ -1,11 +1,7 @@
-import ComingSoon from '@/components/ComingSoon';
+import ContactPage from '@/components/ContactPage';
 
-const ContactPage = () => {
-  return (
-    <div>
-      <ComingSoon />
-    </div>
-  );
+const ContactRoute = () => {
+  return <ContactPage />;
 };
 
-export default ContactPage;
+export default ContactRoute;

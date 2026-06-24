@@ -302,7 +302,7 @@
     "contactUsContent": "請聯絡我們經驗豐富的商業法律團隊安排保密諮詢。我們隨時為您解答疑問，了解您的需求，並為您的下一筆交易或持續業務運作提供策略性法律指導。",
     "contactUsButtonText": "預約諮詢"
   },
-  "tony-wong-info" : {
+  "tony-wong-info": {
     "bio": "黄荣杰律師於2006年獲得加利福尼亞州律師執業資格后，於美國執業至今。 2008年，黄律師創立了金頌達律師事務所。黄律師同時也獲得香港、英格蘭和威爾斯的執業資格。憑藉他在不同領域積累的法律知識和經驗，黄律師與他的團隊為來自美國和亞洲的客戶提供高品質，高效率，且收費合理的法律服務、幫助他們解決移民、國內外商業交易、公司治理、資產保護、知識產權及民事訴訟等領域的複雜法律問題。黄律師曾被 Lawyers of Distinction® 頒發移民法卓越獎。他還是美國移民律師協會（AILA）全球移民分會和亞太分會的成員，並且是EB-5投資者的名單律師。",
     "areas": [
       "移民（尤其是與投資相關的移民）",
@@ -331,5 +331,31 @@
       "English",
       "Chinese (Cantonese and Mandarin)"
     ]
+  },
+  "ContactPage": {
+    "title": "聯絡我們",
+    "subtitle": "我們隨時為您提供協助。請聯絡我們的團隊預約諮詢，或查詢我們的法律服務。",
+    "officeInfoTitle": "我們的辦公室",
+    "losAngelesOffice": "洛杉磯辦公室",
+    "wechatLabel": "微信",
+    "officeHoursTitle": "辦公時間",
+    "officeHoursWeekdays": "星期一至五：上午 9:00 – 下午 6:00（太平洋時間）",
+    "officeHoursWeekends": "星期六至日：僅限預約",
+    "viewOnMap": "在 Google 地圖上查看",
+    "formTitle": "發送訊息",
+    "formNameLabel": "全名",
+    "formNamePlaceholder": "您的全名",
+    "formEmailLabel": "電子郵件地址",
+    "formEmailPlaceholder": "your@email.com",
+    "formPhoneLabel": "電話號碼",
+    "formPhonePlaceholder": "(123) 456-7890",
+    "formSubjectLabel": "主題",
+    "formSubjectPlaceholder": "我們可以如何協助您？",
+    "formSubjectDefault": "來自 wongandlaw.com 的查詢",
+    "formMessageLabel": "訊息內容",
+    "formMessagePlaceholder": "請描述您的法律事宜或問題……",
+    "formDisclaimer": "注意：提交此表格不會建立律師與客戶關係。請勿包含機密資訊。",
+    "formSubmitButton": "發送訊息",
+    "formSuccessMessage": "謝謝您！您的訊息已發送，我們將盡快與您聯絡。"
   }
 }
