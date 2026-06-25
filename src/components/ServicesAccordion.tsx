@@ -9,14 +9,22 @@ interface ServiceDetail {
   whoNeedsIt: string;
 }
 
+interface ServicesAccordionLabels {
+  howWeHelp: string;
+  whyItMatters: string;
+  whoNeedsIt: string;
+}
+
 interface ServicesAccordionProps {
   title: string;
   services: ServiceDetail[];
+  labels: ServicesAccordionLabels;
 }
 
 const ServicesAccordion: React.FC<ServicesAccordionProps> = ({
   title,
   services,
+  labels,
 }) => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
@@ -86,7 +94,7 @@ const ServicesAccordion: React.FC<ServicesAccordionProps> = ({
                     {/* Description */}
                     <div>
                       <h4 className="font-semibold text-orange-500 mb-1">
-                        How We Help
+                        {labels.howWeHelp}
                       </h4>
                       <p className="text-gray-700 text-sm leading-relaxed">
                         {service.description}
@@ -96,7 +104,7 @@ const ServicesAccordion: React.FC<ServicesAccordionProps> = ({
                     {/* Why It Matters */}
                     <div>
                       <h4 className="font-semibold text-orange-500 mb-1">
-                        Why It Matters
+                        {labels.whyItMatters}
                       </h4>
                       <p className="text-gray-700 text-sm leading-relaxed">
                         {service.whyItMatters}
@@ -106,7 +114,7 @@ const ServicesAccordion: React.FC<ServicesAccordionProps> = ({
                     {/* Who Needs It */}
                     <div>
                       <h4 className="font-semibold text-orange-500 mb-1">
-                        Who Needs It
+                        {labels.whoNeedsIt}
                       </h4>
                       <p className="text-gray-700 text-sm leading-relaxed">
                         {service.whoNeedsIt}
