@@ -56,7 +56,8 @@
   },
   "RecentNewsSection": {
     "title": "最新消息與部落格",
-    "viewAllBtnText": "查看全部"
+    "viewAllBtnText": "查看全部",
+    "readMore": "閱讀更多"
   },
   "Footer": {
     "subtitle": "致力於提供專業的移民、商業及遺產規劃法律服務。",
@@ -616,5 +617,21 @@
     "contactUsTitle": "為保障與安心做好規劃",
     "contactUsContent": "如果您希望加強資產保護策略或更新遺產規劃，我們的團隊可以協助您評估適合您情況的架構、文件與下一步安排。",
     "contactUsButtonText": "申請諮詢"
+  },
+  "NewsBlogsPage": {
+    "pageTitle": "新聞與部落格",
+    "pageSubtitle": "掌握我們團隊最新的法律動態與專業見解。",
+    "allCategories": "全部",
+    "readMore": "閱讀更多",
+    "translationComingSoon": "僅提供英文版",
+    "noPostsFound": "未找到文章。"
+  },
+  "PostPage": {
+    "backToBlogs": "返回新聞與部落格",
+    "publishedOn": "發布於",
+    "translationComingSoon": "翻譯即將推出",
+    "ctaTitle": "有法律問題？",
+    "ctaSubtitle": "我們的團隊隨時為您提供幫助。立即預約與我們律師的諮詢。",
+    "ctaButton": "聯絡我們"
   }
 }

@@ -1,33 +1,10 @@
+'use client';
+
 import { Link } from '@/i18n/navigation';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-
-const blogs = [
-  {
-    title: 'Understanding the EB-5 Investor Program',
-    excerpt:
-      'A quick overview of the EB-5 program and what investors need to know.',
-    href: '/blog/eb5-investor-program-overview',
-    image: '/images/services/eb5.jpg',
-    date: '2025-07-01',
-  },
-  {
-    title: 'Business Entity Choices for Startups',
-    excerpt:
-      'LLC, S-Corp, or C-Corp? Here’s how to choose the right structure.',
-    href: '/blog/business-entity-choices',
-    image: '/images/services/business-entities.jpg',
-    date: '2025-06-20',
-  },
-  {
-    title: 'Estate Planning Basics for Families',
-    excerpt: 'Protect your legacy with these essential estate planning tips.',
-    href: '/blog/estate-planning-basics',
-    image: '/images/services/estate-planning.jpg',
-    date: '2025-06-10',
-  },
-  // ...more blogs
-];
+import { useLocale } from 'next-intl';
+import { getLocalizedPost, getRecentPosts } from '@/data/news-blogs';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -44,7 +21,9 @@ const cardVariants = {
 };
 
 const RecentNewsSection = () => {
-	const t = useTranslations('RecentNewsSection');
+  const t = useTranslations('RecentNewsSection');
+  const locale = useLocale();
+  const recentPosts = getRecentPosts(3);
 
   return (
     <motion.section
@@ -68,33 +47,36 @@ const RecentNewsSection = () => {
           </Link>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
-          {blogs.slice(0, 3).map((blog, i) => (
-            <motion.div
-              key={blog.href}
-              className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
-              variants={cardVariants}
-              custom={i}
-            >
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 flex-1 flex flex-col">
-                <span className="text-xs text-gray-400 mb-2">
-                  {new Date(blog.date).toLocaleDateString()}
-                </span>
-                <h3 className="text-lg font-bold mb-2">{blog.title}</h3>
-                <p className="text-gray-700 mb-4 flex-1">{blog.excerpt}</p>
-                <Link
-                  href={blog.href}
-                  className="mt-auto inline-block text-orange-500 font-semibold hover:underline pointer-events-none"
-                >
-                  Read More &rarr;
-                </Link>
-              </div>
-            </motion.div>
-          ))}
+          {recentPosts.map((post, i) => {
+            const { title, excerpt } = getLocalizedPost(post, locale);
+            return (
+              <motion.div
+                key={post.slug}
+                className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+                variants={cardVariants}
+                custom={i}
+              >
+                <img
+                  src={post.image}
+                  alt={title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6 flex-1 flex flex-col">
+                  <span className="text-xs text-gray-400 mb-2">
+                    {new Date(post.date).toLocaleDateString()}
+                  </span>
+                  <h3 className="text-lg font-bold mb-2">{title}</h3>
+                  <p className="text-gray-700 mb-4 flex-1">{excerpt}</p>
+                  <Link
+                    href={`/news-blogs/${post.slug}`}
+                    className="mt-auto inline-block text-orange-500 font-semibold hover:underline"
+                  >
+                    {t('readMore')} &rarr;
+                  </Link>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </motion.section>
