@@ -18,7 +18,7 @@ export const posts: Post[] = [
   {
     slug: 'eb5-investor-program-overview',
     image: '/images/services/eb5.jpg',
-    date: '2025-07-01',
+    date: '2026-07-01',
     category: 'EB-5',
     availableLocales: ['en', 'zh-HK', 'zh-CN'],
     translations: {
@@ -40,7 +40,7 @@ export const posts: Post[] = [
   {
     slug: 'business-entity-choices',
     image: '/images/services/business-entities.jpg',
-    date: '2025-06-20',
+    date: '2026-06-20',
     category: 'Business',
     availableLocales: ['en', 'zh-HK', 'zh-CN'],
     translations: {
@@ -62,7 +62,7 @@ export const posts: Post[] = [
   {
     slug: 'estate-planning-basics',
     image: '/images/services/estate-planning.jpg',
-    date: '2025-06-10',
+    date: '2026-06-10',
     category: 'Estate Planning',
     availableLocales: ['en', 'zh-HK', 'zh-CN'],
     translations: {
