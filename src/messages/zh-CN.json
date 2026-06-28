@@ -56,7 +56,8 @@
   },
   "RecentNewsSection": {
     "title": "最新消息与博客",
-    "viewAllBtnText": "查看全部"
+    "viewAllBtnText": "查看全部",
+    "readMore": "阅读更多"
   },
   "Footer": {
     "subtitle": "致力于提供专业的移民、商业及遗产规划法律服务。",
@@ -612,5 +613,21 @@
     "contactUsTitle": "为保障与安心做好规划",
     "contactUsContent": "如果您希望加强资产保护策略或更新遗产规划，我们的团队可以协助您评估适合您情况的架构、文件与下一步安排。",
     "contactUsButtonText": "申请咨询"
+  },
+  "NewsBlogsPage": {
+    "pageTitle": "新闻与博客",
+    "pageSubtitle": "掌握我们团队最新的法律动态与专业见解。",
+    "allCategories": "全部",
+    "readMore": "阅读更多",
+    "translationComingSoon": "仅提供英文版",
+    "noPostsFound": "未找到文章。"
+  },
+  "PostPage": {
+    "backToBlogs": "返回新闻与博客",
+    "publishedOn": "发布于",
+    "translationComingSoon": "翻译即将推出",
+    "ctaTitle": "有法律问题？",
+    "ctaSubtitle": "我们的团队随时为您提供帮助。立即预约与我们律师的咨询。",
+    "ctaButton": "联系我们"
   }
 }

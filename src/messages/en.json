@@ -56,7 +56,8 @@
   },
   "RecentNewsSection": {
     "title": "Recent News & Blogs",
-    "viewAllBtnText": "View All"
+    "viewAllBtnText": "View All",
+    "readMore": "Read More"
   },
   "Footer": {
     "subtitle": "Dedicated to providing expert legal services in immigration, business, and estate planning.",
@@ -617,5 +618,21 @@
     "section9Title": "9. Limitation of Liability",
     "section9Content": "To the fullest extent permitted by applicable law, Wong & Partners, Lawyers, P.C. and its attorneys, partners, employees, and agents shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of or related to your use of, or inability to use, this website or any information contained herein. This includes, without limitation, damages resulting from reliance on any information provided on this website or from any errors or omissions in such information.",
     "contactText": "If you have questions about this disclaimer or wish to speak with an attorney, please contact us at:"
+  },
+  "NewsBlogsPage": {
+    "pageTitle": "News & Blogs",
+    "pageSubtitle": "Stay informed with the latest legal updates and insights from our team.",
+    "allCategories": "All",
+    "readMore": "Read More",
+    "translationComingSoon": "English only",
+    "noPostsFound": "No posts found."
+  },
+  "PostPage": {
+    "backToBlogs": "Back to News & Blogs",
+    "publishedOn": "Published on",
+    "translationComingSoon": "Translation Coming Soon",
+    "ctaTitle": "Have Legal Questions?",
+    "ctaSubtitle": "Our team is here to help. Schedule a consultation with one of our attorneys today.",
+    "ctaButton": "Contact Us"
   }
 }
