@@ -169,7 +169,7 @@ const LegalServicesSection: React.FC = () => {
           </div>
           {/* Content */}
           <div className="flex-1 flex flex-col items-center justify-center min-h-[268px]">
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={active}
                 aria-labelledby={`service-tab-${active}`}
