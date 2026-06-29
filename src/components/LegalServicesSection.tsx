@@ -42,7 +42,11 @@ const LegalServicesSection: React.FC = () => {
   const t = useTranslations('LegalServicesSection');
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    if (typeof window === 'undefined') {
+      return undefined;
+    }
+
+    const mediaQuery = window.matchMedia('(width < 48rem)');
     const updateIsMobile = (event: MediaQueryList | MediaQueryListEvent) =>
       setIsMobile(event.matches);
 
@@ -130,14 +134,21 @@ const LegalServicesSection: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Tabs: grid on mobile, vertical on desktop */}
           <div className="w-full md:w-1/3">
-            <div className="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-2">
+            <div
+              className="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-2"
+              role="tablist"
+              aria-label={t('legalServicesTitle')}
+            >
               {services.map((service, idx) => (
                 <button
                   key={service.label}
+                  id={`service-tab-${idx}`}
+                  aria-selected={active === idx}
                   className={`w-full rounded-2xl border px-4 py-4 text-center shadow-sm transition-all duration-200 md:rounded md:px-4 md:py-3 md:text-left ${
                     active === idx ? tabVariants.active : tabVariants.inactive
                   }`}
                   onClick={() => setActive(idx)}
+                  role="tab"
                   type="button"
                 >
                   <div className="flex min-h-24 flex-col items-center justify-center gap-2 md:min-h-0 md:flex-row md:justify-start">
@@ -159,9 +170,11 @@ const LegalServicesSection: React.FC = () => {
             <AnimatePresence mode="wait">
               <motion.div
                 key={active}
+                aria-labelledby={`service-tab-${active}`}
                 initial="initial"
                 animate="animate"
                 exit="exit"
+                role="tabpanel"
                 variants={contentVariants}
                 className="relative w-full h-full max-w-xl flex items-center justify-center rounded-lg overflow-hidden shadow-md min-h-[300px]"
               >
