@@ -42,12 +42,14 @@ const LegalServicesSection: React.FC = () => {
   const t = useTranslations('LegalServicesSection');
 
   useEffect(() => {
-    const updateIsMobile = () => setIsMobile(window.innerWidth < 768);
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const updateIsMobile = (event: MediaQueryList | MediaQueryListEvent) =>
+      setIsMobile(event.matches);
 
-    updateIsMobile();
-    window.addEventListener('resize', updateIsMobile);
+    updateIsMobile(mediaQuery);
+    mediaQuery.addEventListener('change', updateIsMobile);
 
-    return () => window.removeEventListener('resize', updateIsMobile);
+    return () => mediaQuery.removeEventListener('change', updateIsMobile);
   }, []);
 
   const services: {
@@ -138,7 +140,7 @@ const LegalServicesSection: React.FC = () => {
                   onClick={() => setActive(idx)}
                   type="button"
                 >
-                  <div className="flex min-h-[84px] flex-col items-center justify-center gap-2 md:min-h-0 md:flex-row md:justify-start">
+                  <div className="flex min-h-24 flex-col items-center justify-center gap-2 md:min-h-0 md:flex-row md:justify-start">
                     <service.icon
                       className={`text-xl md:hidden ${
                         active === idx ? 'text-white' : 'text-orange-500'
