@@ -14,9 +14,9 @@ import { useTranslations } from 'next-intl';
 
 const tabVariants = {
   active:
-    'bg-orange-500 text-white font-bold shadow-md border-none ring-2 ring-orange-500 transition-all duration-200 cursor-pointer',
+    'cursor-pointer border-orange-500 bg-orange-500 text-white font-bold shadow-lg ring-2 ring-orange-200 transition-all duration-200 md:border-transparent md:shadow-md md:ring-orange-500',
   inactive:
-    'bg-white text-gray-700 hover:bg-orange-100 hover:text-orange-500 border border-gray-200 shadow-sm transition-all duration-200 cursor-pointer',
+    'cursor-pointer border-gray-200 bg-white text-gray-700 shadow-sm transition-all duration-200 hover:border-orange-200 hover:bg-orange-50 hover:text-orange-500 md:hover:bg-orange-100',
 };
 
 const desktopContentVariants = {
@@ -111,6 +111,7 @@ const LegalServicesSection: React.FC = () => {
   const contentVariants = isMobile
     ? mobileContentVariants
     : desktopContentVariants;
+  const ActiveIcon = services[active].icon;
 
   return (
     <motion.section
@@ -174,7 +175,7 @@ const LegalServicesSection: React.FC = () => {
                 <div className="absolute inset-0 bg-black/50 z-10" />
                 {/* Content Overlay */}
                 <div className="relative z-20 flex flex-col items-center justify-center w-full h-full px-6 text-center text-white">
-                  <services[active].icon className="mb-2 text-3xl text-orange-500" />
+                  <ActiveIcon className="mb-2 text-3xl text-orange-500" />
                   <h3 className="text-xl font-bold mb-2 drop-shadow">
                     {services[active].label}
                   </h3>
