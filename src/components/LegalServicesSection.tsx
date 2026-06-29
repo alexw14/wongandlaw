@@ -36,7 +36,7 @@ const sectionVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
 };
 
-const mobileBreakpointQuery = '(width < 48rem)';
+const mobileBreakpointQuery = '(max-width: 47.99rem)';
 
 const LegalServicesSection: React.FC = () => {
   const [active, setActive] = useState(0);
@@ -119,7 +119,9 @@ const LegalServicesSection: React.FC = () => {
   const contentVariants = isMobile
     ? mobileContentVariants
     : desktopContentVariants;
-  const ActiveIcon = services[active].icon;
+  const activeIcon = services[active].icon;
+  const getMobileIconClassName = (isActive: boolean) =>
+    `text-xl md:hidden ${isActive ? 'text-white' : 'text-orange-500'}`;
 
   return (
     <motion.section
@@ -154,11 +156,9 @@ const LegalServicesSection: React.FC = () => {
                   type="button"
                 >
                   <div className="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-start">
-                    <service.icon
-                      className={`text-xl md:hidden ${
-                        active === idx ? 'text-white' : 'text-orange-500'
-                      }`}
-                    />
+                    {React.createElement(service.icon, {
+                      className: getMobileIconClassName(active === idx),
+                    })}
                     <span className="text-sm font-semibold leading-snug md:text-base">
                       {service.label}
                     </span>
@@ -192,7 +192,9 @@ const LegalServicesSection: React.FC = () => {
                 <div className="absolute inset-0 bg-black/50 z-10" />
                 {/* Content Overlay */}
                 <div className="relative z-20 flex flex-col items-center justify-center w-full h-full px-6 text-center text-white">
-                  <ActiveIcon className="mb-2 text-3xl text-orange-500" />
+                  {React.createElement(activeIcon, {
+                    className: 'mb-2 text-3xl text-orange-500',
+                  })}
                   <h3 className="text-xl font-bold mb-2 drop-shadow">
                     {services[active].label}
                   </h3>
