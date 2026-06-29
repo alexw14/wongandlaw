@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import type { IconType } from 'react-icons';
 import {
   FaBuilding,
   FaHandshake,
@@ -13,15 +14,21 @@ import { useTranslations } from 'next-intl';
 
 const tabVariants = {
   active:
-    'bg-orange-500 text-white font-bold shadow-md border-none ring-2 ring-orange-500 transition-all duration-200 cursor-pointer',
+    'cursor-pointer border-orange-500 bg-orange-500 text-white font-bold shadow-lg ring-2 ring-orange-200 transition-all duration-200 md:border-transparent md:shadow-md md:ring-orange-500',
   inactive:
-    'bg-white text-gray-700 hover:bg-orange-100 hover:text-orange-500 border border-gray-200 shadow-sm transition-all duration-200 cursor-pointer',
+    'cursor-pointer border-gray-200 bg-white text-gray-700 shadow-sm transition-all duration-200 hover:border-orange-200 hover:bg-orange-50 hover:text-orange-500 md:hover:bg-orange-100',
 };
 
-const contentVariants = {
+const desktopContentVariants = {
   initial: { opacity: 0, x: 24 },
   animate: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   exit: { opacity: 0, x: -24, transition: { duration: 0.3 } },
+};
+
+const mobileContentVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { duration: 0.35 } },
+  exit: { opacity: 0, transition: { duration: 0.2 } },
 };
 
 const sectionVariants = {
@@ -29,14 +36,39 @@ const sectionVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
 };
 
+const mobileBreakpointQuery = '(max-width: 47.99rem)';
+
 const LegalServicesSection: React.FC = () => {
   const [active, setActive] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const t = useTranslations('LegalServicesSection');
 
-  const services = [
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return undefined;
+    }
+
+    const mediaQuery = window.matchMedia(mobileBreakpointQuery);
+    const updateIsMobile = (event: MediaQueryList | MediaQueryListEvent) =>
+      setIsMobile(event.matches);
+
+    updateIsMobile(mediaQuery);
+    mediaQuery.addEventListener('change', updateIsMobile);
+
+    return () => mediaQuery.removeEventListener('change', updateIsMobile);
+  }, []);
+
+  const services: {
+    label: string;
+    icon: IconType;
+    description: string;
+    buttonText: string;
+    href: string;
+    image: string;
+  }[] = [
     {
       label: t('eb5InvestorProgram'),
-      icon: <FaChartLine className="text-3xl text-orange-500 mb-2" />,
+      icon: FaChartLine,
       description: t('eb5InvestorProgramDescription'),
       buttonText: t('eb5InvestorProgramButtonText'),
       href: '/practice-areas/eb5-investor-program',
@@ -44,7 +76,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('immigration'),
-      icon: <FaGlobe className="text-3xl text-orange-500 mb-2" />,
+      icon: FaGlobe,
       description: t('immigrationDescription'),
       buttonText: t('immigrationButtonText'),
       href: '/practice-areas/immigration',
@@ -52,7 +84,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('businessEntities'),
-      icon: <FaBuilding className="text-3xl text-orange-500 mb-2" />,
+      icon: FaBuilding,
       description: t('businessEntitiesDescription'),
       buttonText: t('businessEntitiesButtonText'),
       href: '/practice-areas/business-entities-corporate-governance',
@@ -60,7 +92,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('businessTransactions'),
-      icon: <FaHandshake className="text-3xl text-orange-500 mb-2" />,
+      icon: FaHandshake,
       description: t('businessTransactionsDescription'),
       buttonText: t('businessTransactionsButtonText'),
       href: '/practice-areas/business-transactions',
@@ -68,7 +100,7 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('ecommerceAndIP'),
-      icon: <FaGavel className="text-3xl text-orange-500 mb-2" />,
+      icon: FaGavel,
       description: t('ecommerceAndIPDescription'),
       buttonText: t('ecommerceAndIPButtonText'),
       href: '/practice-areas/e-commerce-intellectual-property',
@@ -76,13 +108,20 @@ const LegalServicesSection: React.FC = () => {
     },
     {
       label: t('assetsProtection'),
-      icon: <FaShieldAlt className="text-3xl text-orange-500 mb-2" />,
+      icon: FaShieldAlt,
       description: t('assetsProtectionDescription'),
       buttonText: t('assetsProtectionButtonText'),
       href: '/practice-areas/assets-protection-estate-planning',
       image: '/images/services/estate-planning.jpg',
     },
   ];
+
+  const contentVariants = isMobile
+    ? mobileContentVariants
+    : desktopContentVariants;
+  const activeIcon = services[active].icon;
+  const getMobileIconClassName = (isActive: boolean) =>
+    `text-xl md:hidden ${isActive ? 'text-white' : 'text-orange-500'}`;
 
   return (
     <motion.section
@@ -97,20 +136,33 @@ const LegalServicesSection: React.FC = () => {
           {t('legalServicesTitle')}
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Tabs: scrollable horizontally on mobile, vertical on desktop */}
+          {/* Tabs: grid on mobile, vertical on desktop */}
           <div className="w-full md:w-1/3">
-            <div className="flex md:flex-col gap-2 overflow-x-auto md:overflow-visible">
+            <div
+              className="grid grid-cols-2 gap-3 md:flex md:flex-col md:gap-2"
+              role="tablist"
+              aria-label={t('legalServicesTitle')}
+            >
               {services.map((service, idx) => (
                 <button
                   key={service.label}
-                  className={`flex-shrink-0 w-auto md:w-full text-left px-4 py-3 rounded transition-all duration-200 ${
+                  id={`service-tab-${idx}`}
+                  aria-selected={active === idx}
+                  className={`w-full rounded-2xl border px-4 py-4 text-center shadow-sm transition-all duration-200 md:rounded md:px-4 md:py-3 md:text-left ${
                     active === idx ? tabVariants.active : tabVariants.inactive
                   }`}
                   onClick={() => setActive(idx)}
+                  role="tab"
                   type="button"
-                  style={{ minWidth: '180px' }}
                 >
-                  {service.label}
+                  <div className="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-start">
+                    {React.createElement(service.icon, {
+                      className: getMobileIconClassName(active === idx),
+                    })}
+                    <span className="text-sm font-semibold leading-snug md:text-base">
+                      {service.label}
+                    </span>
+                  </div>
                 </button>
               ))}
             </div>
@@ -120,9 +172,11 @@ const LegalServicesSection: React.FC = () => {
             <AnimatePresence mode="wait">
               <motion.div
                 key={active}
+                aria-labelledby={`service-tab-${active}`}
                 initial="initial"
                 animate="animate"
                 exit="exit"
+                role="tabpanel"
                 variants={contentVariants}
                 className="relative w-full h-full max-w-xl flex items-center justify-center rounded-lg overflow-hidden shadow-md min-h-[300px]"
               >
@@ -138,7 +192,9 @@ const LegalServicesSection: React.FC = () => {
                 <div className="absolute inset-0 bg-black/50 z-10" />
                 {/* Content Overlay */}
                 <div className="relative z-20 flex flex-col items-center justify-center w-full h-full px-6 text-center text-white">
-                  {services[active].icon}
+                  {React.createElement(activeIcon, {
+                    className: 'mb-2 text-3xl text-orange-500',
+                  })}
                   <h3 className="text-xl font-bold mb-2 drop-shadow">
                     {services[active].label}
                   </h3>
