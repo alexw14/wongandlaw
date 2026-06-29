@@ -36,6 +36,8 @@ const sectionVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
 };
 
+const mobileBreakpointQuery = '(width < 48rem)';
+
 const LegalServicesSection: React.FC = () => {
   const [active, setActive] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -46,7 +48,7 @@ const LegalServicesSection: React.FC = () => {
       return undefined;
     }
 
-    const mediaQuery = window.matchMedia('(width < 48rem)');
+    const mediaQuery = window.matchMedia(mobileBreakpointQuery);
     const updateIsMobile = (event: MediaQueryList | MediaQueryListEvent) =>
       setIsMobile(event.matches);
 
@@ -151,7 +153,7 @@ const LegalServicesSection: React.FC = () => {
                   role="tab"
                   type="button"
                 >
-                  <div className="flex min-h-24 flex-col items-center justify-center gap-2 md:min-h-0 md:flex-row md:justify-start">
+                  <div className="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-start">
                     <service.icon
                       className={`text-xl md:hidden ${
                         active === idx ? 'text-white' : 'text-orange-500'
