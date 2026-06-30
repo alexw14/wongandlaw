@@ -17,7 +17,7 @@ const Footer = () => {
         {/* Brand/Logo and Description */}
         <div className="flex-1 text-center md:text-left">
           <Link href="/" className="text-2xl font-bold text-orange-500">
-            Wong & Partners, Lawyers, P.C.
+            Wong & Partners, P.C.
           </Link>
           <p className="mt-2 text-sm text-gray-400 max-w-s mx-auto md:mx-0">
             {t('subtitle')}
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-10 border-t border-gray-700 pt-4 text-center text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} Wong & Partners. All rights reserved.
+        &copy; {new Date().getFullYear()} Wong & Partners, P.C. All rights reserved.
       </div>
     </footer>
   );

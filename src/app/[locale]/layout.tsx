@@ -5,7 +5,7 @@ import Headers from '@/components/Headers';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Wong & Partners',
+  title: 'Wong & Partners, P.C.',
   description: 'Your trusted partner in legal services.',
 };
 
