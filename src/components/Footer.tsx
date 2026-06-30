@@ -10,6 +10,20 @@ import {
 
 const Footer = () => {
   const t = useTranslations('Footer');
+  const offices = [
+    {
+      title: t('losAngelesOffice'),
+      addressLines: ['1360 Valley Vista Drive, Suite 136', 'Diamond Bar, CA 91765'],
+      phone: '(626) 447-7788',
+      phoneHref: 'tel:6264477788',
+    },
+    {
+      title: t('irvineOffice'),
+      addressLines: ['20 Pacifica, Suite 460', 'Irvine, CA 92618'],
+      phone: '(626) 447-7788',
+      phoneHref: 'tel:6264477788',
+    },
+  ];
 
   return (
     <footer className="bg-gray-800 text-gray-200 pt-12 pb-6 px-4">
@@ -25,24 +39,33 @@ const Footer = () => {
         </div>
         {/* Office Locations */}
         <div className="flex-1 mt-8 md:mt-0 text-center md:text-left">
-          <h4 className="font-semibold mb-2 text-white">
-            {t('losAngelesOffice')}
+          <div className="space-y-6">
+            {offices.map((office) => (
+              <div key={office.title}>
+                <h4 className="font-semibold mb-2 text-white">{office.title}</h4>
+                <ul className="space-y-1 text-sm">
+                  <li className="flex items-center gap-2">
+                    <FaMapMarkerAlt className="inline text-orange-500" size={20} />
+                    <span className="text-left">
+                      {office.addressLines[0]}
+                      <br />
+                      {office.addressLines[1]}
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaPhone className="inline text-orange-500" size={20} />
+                    <a href={office.phoneHref} className="hover:text-orange-500">
+                      {office.phone}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            ))}
+          </div>
+          <h4 className="font-semibold mt-6 mb-2 text-white">
+            {t('sharedContactTitle')}
           </h4>
           <ul className="space-y-1 text-sm">
-            <li className="flex items-center gap-2">
-              <FaMapMarkerAlt className="inline text-orange-500" size={20} />
-              <span className="text-left">
-                1360 Valley Vista Drive, Suite 136
-                <br />
-                Diamond Bar, CA 91765
-              </span>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaPhone className="inline text-orange-500" size={20} />
-              <a href="tel:6264477788" className="hover:text-orange-500">
-                (626) 447-7788
-              </a>
-            </li>
             <li className="flex items-center gap-2">
               <FaFax className="inline text-orange-500" size={20} />
               <a href="fax:6264477783" className="hover:text-orange-500">

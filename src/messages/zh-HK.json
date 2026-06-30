@@ -62,6 +62,8 @@
   "Footer": {
     "subtitle": "致力於提供專業的移民、商業及遺產規劃法律服務。",
     "losAngelesOffice": "洛杉磯辦公室",
+    "irvineOffice": "爾灣辦公室",
+    "sharedContactTitle": "共用聯絡方式",
     "visitOurBlog": "前往部落格",
     "websiteTermsAndPrivacy": "網站條款與隱私",
     "legalDisclaimer": "法律免責聲明"
@@ -416,13 +418,14 @@
   "ContactPage": {
     "title": "聯絡我們",
     "subtitle": "我們隨時為您提供協助。請聯絡我們的團隊預約諮詢，或查詢我們的法律服務。",
-    "officeInfoTitle": "我們的辦公室",
+    "officeInfoTitle": "我們的辦公室地點",
     "losAngelesOffice": "洛杉磯辦公室",
+    "irvineOffice": "爾灣辦公室",
+    "sharedContactTitle": "共用聯絡方式",
     "wechatLabel": "微信",
     "officeHoursTitle": "辦公時間",
     "officeHoursWeekdays": "星期一至五：上午 9:00 – 下午 6:00（太平洋時間）",
     "officeHoursWeekends": "星期六至日：僅限預約",
-    "viewOnMap": "在 Google 地圖上查看",
     "formTitle": "發送訊息",
     "formNameLabel": "全名",
     "formNamePlaceholder": "您的全名",

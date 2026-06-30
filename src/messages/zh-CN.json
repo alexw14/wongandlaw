@@ -62,6 +62,8 @@
   "Footer": {
     "subtitle": "致力于提供专业的移民、商业及遗产规划法律服务。",
     "losAngelesOffice": "洛杉矶办公室",
+    "irvineOffice": "尔湾办公室",
+    "sharedContactTitle": "共用联系方式",
     "visitOurBlog": "前往博客",
     "websiteTermsAndPrivacy": "网站条款与隐私",
     "legalDisclaimer": "法律免责声明"
@@ -412,13 +414,14 @@
   "ContactPage": {
     "title": "联系我们",
     "subtitle": "我们随时为您提供帮助。请联系我们的团队预约咨询，或咨询我们的法律服务。",
-    "officeInfoTitle": "我们的办公室",
+    "officeInfoTitle": "我们的办公室地点",
     "losAngelesOffice": "洛杉矶办公室",
+    "irvineOffice": "尔湾办公室",
+    "sharedContactTitle": "共用联系方式",
     "wechatLabel": "微信",
     "officeHoursTitle": "办公时间",
     "officeHoursWeekdays": "周一至周五：上午 9:00 – 下午 6:00（太平洋时间）",
     "officeHoursWeekends": "周六至周日：仅限预约",
-    "viewOnMap": "在 Google 地图上查看",
     "formTitle": "发送消息",
     "formNameLabel": "姓名",
     "formNamePlaceholder": "您的全名",
