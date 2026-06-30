@@ -17,6 +17,20 @@ const fadeUp = {
 
 const ContactPage: React.FC = () => {
   const t = useTranslations('ContactPage');
+  const offices = [
+    {
+      title: t('losAngelesOffice'),
+      addressLines: ['1360 Valley Vista Drive, Suite 136', 'Diamond Bar, CA 91765'],
+      phone: '(626) 447-7788',
+      phoneHref: 'tel:6264477788',
+    },
+    {
+      title: t('irvineOffice'),
+      addressLines: ['20 Pacifica, Suite 460', 'Irvine, CA 92618'],
+      phone: '(626) 447-7788',
+      phoneHref: 'tel:6264477788',
+    },
+  ];
 
   const [formData, setFormData] = useState({
     name: '',
@@ -72,33 +86,53 @@ const ContactPage: React.FC = () => {
             {t('officeInfoTitle')}
           </h2>
 
-          {/* LA Office */}
+          <div className="space-y-8 mb-8">
+            {offices.map((office) => (
+              <div key={office.title}>
+                <h3 className="text-lg font-semibold text-orange-500 mb-3">
+                  {office.title}
+                </h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start gap-3">
+                    <FaMapMarkerAlt
+                      className="text-orange-500 mt-1 shrink-0"
+                      size={18}
+                    />
+                    <span>
+                      {office.addressLines[0]}
+                      <br />
+                      {office.addressLines[1]}
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <FaPhone className="text-orange-500 shrink-0" size={18} />
+                    <a
+                      href={office.phoneHref}
+                      className="hover:text-orange-500 transition-colors"
+                    >
+                      {office.phone}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            ))}
+          </div>
+
           <div className="mb-8">
             <h3 className="text-lg font-semibold text-orange-500 mb-3">
-              {t('losAngelesOffice')}
+              {t('sharedContactTitle')}
             </h3>
             <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-orange-500 mt-1 shrink-0" size={18} />
-                <span>
-                  1360 Valley Vista Drive, Suite 136
-                  <br />
-                  Diamond Bar, CA 91765
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <FaPhone className="text-orange-500 shrink-0" size={18} />
-                <a href="tel:6264477788" className="hover:text-orange-500 transition-colors">
-                  (626) 447-7788
-                </a>
-              </li>
               <li className="flex items-center gap-3">
                 <FaFax className="text-orange-500 shrink-0" size={18} />
                 <span>(626) 447-7783</span>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-orange-500 shrink-0" size={18} />
-                <a href="mailto:info@wongandlaw.com" className="hover:text-orange-500 transition-colors">
+                <a
+                  href="mailto:info@wongandlaw.com"
+                  className="hover:text-orange-500 transition-colors"
+                >
                   info@wongandlaw.com
                 </a>
               </li>
@@ -120,15 +154,6 @@ const ContactPage: React.FC = () => {
             </ul>
           </div>
 
-          {/* Map link */}
-          <a
-            href="https://maps.google.com/?q=1360+Valley+Vista+Drive+Suite+136+Diamond+Bar+CA+91765"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-600 transition-colors"
-          >
-            {t('viewOnMap')}
-          </a>
         </motion.section>
 
         {/* Contact Form */}
