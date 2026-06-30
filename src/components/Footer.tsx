@@ -38,22 +38,22 @@ const Footer = () => {
           </p>
         </div>
         {/* Office Locations */}
-        <div className="flex-1 mt-8 md:mt-0 text-center md:text-left">
-          <div className="space-y-6">
+        <div className="flex-1 mt-8 md:mt-0">
+          <div className="flex flex-col sm:flex-row gap-6 text-center sm:text-left">
             {offices.map((office) => (
-              <div key={office.title}>
+              <div key={office.title} className="flex-1">
                 <h4 className="font-semibold mb-2 text-white">{office.title}</h4>
                 <ul className="space-y-1 text-sm">
-                  <li className="flex items-center gap-2">
-                    <FaMapMarkerAlt className="inline text-orange-500" size={20} />
+                  <li className="flex items-center gap-2 justify-center sm:justify-start">
+                    <FaMapMarkerAlt className="inline text-orange-500 shrink-0" size={20} />
                     <span className="text-left">
                       {office.addressLines[0]}
                       <br />
                       {office.addressLines[1]}
                     </span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <FaPhone className="inline text-orange-500" size={20} />
+                  <li className="flex items-center gap-2 justify-center sm:justify-start">
+                    <FaPhone className="inline text-orange-500 shrink-0" size={20} />
                     <a href={office.phoneHref} className="hover:text-orange-500">
                       {office.phone}
                     </a>
@@ -62,30 +62,32 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <h4 className="font-semibold mt-6 mb-2 text-white">
-            {t('sharedContactTitle')}
-          </h4>
-          <ul className="space-y-1 text-sm">
-            <li className="flex items-center gap-2">
-              <FaFax className="inline text-orange-500" size={20} />
-              <a href="fax:6264477783" className="hover:text-orange-500">
-                (626) 447-7783
-              </a>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaEnvelope className="inline text-orange-500" size={20} />
-              <a
-                href="mailto:info@wongandlaw.com"
-                className="hover:text-orange-500"
-              >
-                info@wongandlaw.com
-              </a>
-            </li>
-            <li className="flex items-center gap-2">
-              <FaWeixin className="inline text-orange-500" size={20} />
-              <span className="text-gray-300">Santony168</span>
-            </li>
-          </ul>
+          <div className="mt-6 text-center sm:text-left">
+            <h4 className="font-semibold mb-2 text-white">
+              {t('sharedContactTitle')}
+            </h4>
+            <ul className="space-y-1 text-sm">
+              <li className="flex items-center gap-2 justify-center sm:justify-start">
+                <FaFax className="inline text-orange-500 shrink-0" size={20} />
+                <a href="fax:6264477783" className="hover:text-orange-500">
+                  (626) 447-7783
+                </a>
+              </li>
+              <li className="flex items-center gap-2 justify-center sm:justify-start">
+                <FaEnvelope className="inline text-orange-500 shrink-0" size={20} />
+                <a
+                  href="mailto:info@wongandlaw.com"
+                  className="hover:text-orange-500"
+                >
+                  info@wongandlaw.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2 justify-center sm:justify-start">
+                <FaWeixin className="inline text-orange-500 shrink-0" size={20} />
+                <span className="text-gray-300">Santony168</span>
+              </li>
+            </ul>
+          </div>
         </div>
         {/* Blog & Legal Buttons */}
         <div className="flex-1 flex flex-col items-center md:items-end mt-8 md:mt-0 space-y-3">
